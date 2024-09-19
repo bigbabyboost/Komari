@@ -3,8 +3,8 @@ package eu.kanade.tachiyomi.util.system
 import android.content.Context
 import android.text.format.DateUtils
 import dev.icerock.moko.resources.StringResource
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.util.*
 
 val Long.timeSpanFromNow: String

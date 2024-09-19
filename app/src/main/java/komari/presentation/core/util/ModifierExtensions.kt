@@ -1,10 +1,10 @@
-package Komari.presentation.core.util
+package yokai.presentation.core.util
 
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
-import Komari.presentation.theme.SecondaryItemAlpha
+import yokai.presentation.theme.SecondaryItemAlpha
 
 fun Modifier.secondaryItemAlpha(): Modifier = this.alpha(SecondaryItemAlpha)
 

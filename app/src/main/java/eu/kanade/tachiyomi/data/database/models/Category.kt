@@ -3,8 +3,8 @@ package eu.kanade.tachiyomi.data.database.models
 import android.content.Context
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.ui.library.LibrarySort
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.io.Serializable
 
 interface Category : Serializable {

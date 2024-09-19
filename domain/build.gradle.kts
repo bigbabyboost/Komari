@@ -26,7 +26,7 @@ kotlin {
 }
 
 android {
-    namespace = "Komari.domain"
+    namespace = "yokai.domain"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

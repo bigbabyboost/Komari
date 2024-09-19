@@ -8,8 +8,8 @@ import eu.kanade.tachiyomi.data.notification.NotificationReceiver
 import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.util.system.notificationBuilder
 import eu.kanade.tachiyomi.util.system.notificationManager
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import android.R as AR
 
 class ExtensionInstallNotifier(private val context: Context) {

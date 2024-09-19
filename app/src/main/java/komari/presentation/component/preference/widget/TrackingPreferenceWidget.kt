@@ -1,4 +1,4 @@
-package Komari.presentation.component.preference.widget
+package yokai.presentation.component.preference.widget
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -17,12 +17,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.data.track.TrackService
-import Komari.presentation.component.TrackLogoIcon
-import Komari.presentation.component.preference.LocalPreferenceHighlighted
+import yokai.presentation.component.TrackLogoIcon
+import yokai.presentation.component.preference.LocalPreferenceHighlighted
 
 @Composable
 fun TrackingPreferenceWidget(

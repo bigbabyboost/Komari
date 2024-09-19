@@ -1,4 +1,4 @@
-package Komari.core.archive
+package yokai.core.archive
 
 import me.zhanghai.android.libarchive.Archive
 import me.zhanghai.android.libarchive.ArchiveEntry

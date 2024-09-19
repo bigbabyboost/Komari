@@ -1,4 +1,4 @@
-package Komari.domain.chapter.models
+package yokai.domain.chapter.models
 
 data class ChapterUpdate(
     val id: Long,

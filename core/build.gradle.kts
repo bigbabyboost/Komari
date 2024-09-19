@@ -60,7 +60,7 @@ kotlin {
 }
 
 android {
-    namespace = "Komari.core"
+    namespace = "yokai.core"
 }
 
 tasks {

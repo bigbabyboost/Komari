@@ -1,7 +1,7 @@
-package Komari.data.manga.models
+package yokai.data.manga.models
 
 import eu.kanade.tachiyomi.source.model.SManga
-import Komari.domain.manga.models.Manga
+import yokai.domain.manga.models.Manga
 
 fun Manga.toSManga() = SManga.create().also {
     it.url = url

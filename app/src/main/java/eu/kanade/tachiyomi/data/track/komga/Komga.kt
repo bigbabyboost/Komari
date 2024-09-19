@@ -13,8 +13,8 @@ import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import okhttp3.Dns
 import okhttp3.OkHttpClient
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class Komga(private val context: Context, id: Long) : TrackService(id), EnhancedTrackService {
 

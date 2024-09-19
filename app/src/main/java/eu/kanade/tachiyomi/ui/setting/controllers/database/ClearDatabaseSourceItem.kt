@@ -12,8 +12,8 @@ import eu.kanade.tachiyomi.source.LocalSource
 import eu.kanade.tachiyomi.source.Source
 import eu.kanade.tachiyomi.source.SourceManager
 import eu.kanade.tachiyomi.source.icon
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 data class ClearDatabaseSourceItem(val source: Source, val mangaCount: Int) : AbstractFlexibleItem<ClearDatabaseSourceItem.Holder>() {
 

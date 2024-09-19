@@ -1,6 +1,6 @@
-package Komari.domain.library.custom.interactor
+package yokai.domain.library.custom.interactor
 
-import Komari.domain.library.custom.CustomMangaRepository
+import yokai.domain.library.custom.CustomMangaRepository
 
 class RelinkCustomManga(
     private val customMangaRepository: CustomMangaRepository,

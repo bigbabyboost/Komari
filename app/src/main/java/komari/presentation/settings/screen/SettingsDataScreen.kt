@@ -1,4 +1,4 @@
-package Komari.presentation.settings.screen
+package yokai.presentation.settings.screen
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -48,20 +48,20 @@ import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.backup.BackupPreferences
-import Komari.domain.storage.StorageManager
-import Komari.domain.storage.StoragePreferences
-import Komari.i18n.MR
-import Komari.presentation.component.preference.Preference
-import Komari.presentation.component.preference.storageLocationText
-import Komari.presentation.component.preference.widget.BasePreferenceWidget
-import Komari.presentation.component.preference.widget.PrefsHorizontalPadding
-import Komari.presentation.settings.ComposableSettings
-import Komari.presentation.settings.screen.data.CreateBackup
-import Komari.presentation.settings.screen.data.RestoreBackup
-import Komari.presentation.settings.screen.data.StorageInfo
-import Komari.presentation.settings.screen.data.storageLocationPicker
-import Komari.util.lang.getString
+import yokai.domain.backup.BackupPreferences
+import yokai.domain.storage.StorageManager
+import yokai.domain.storage.StoragePreferences
+import yokai.i18n.MR
+import yokai.presentation.component.preference.Preference
+import yokai.presentation.component.preference.storageLocationText
+import yokai.presentation.component.preference.widget.BasePreferenceWidget
+import yokai.presentation.component.preference.widget.PrefsHorizontalPadding
+import yokai.presentation.settings.ComposableSettings
+import yokai.presentation.settings.screen.data.CreateBackup
+import yokai.presentation.settings.screen.data.RestoreBackup
+import yokai.presentation.settings.screen.data.StorageInfo
+import yokai.presentation.settings.screen.data.storageLocationPicker
+import yokai.util.lang.getString
 
 object SettingsDataScreen : ComposableSettings {
     @Composable

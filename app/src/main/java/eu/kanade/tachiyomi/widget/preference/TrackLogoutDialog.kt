@@ -11,8 +11,8 @@ import eu.kanade.tachiyomi.util.view.setNegativeButton
 import eu.kanade.tachiyomi.util.view.setPositiveButton
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class TrackLogoutDialog(bundle: Bundle? = null) : DialogController(bundle) {
 

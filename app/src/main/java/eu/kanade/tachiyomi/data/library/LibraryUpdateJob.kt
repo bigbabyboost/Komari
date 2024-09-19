@@ -81,12 +81,12 @@ import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.domain.chapter.interactor.GetChapter
-import Komari.domain.manga.interactor.GetLibraryManga
-import Komari.domain.manga.interactor.UpdateManga
-import Komari.domain.manga.models.cover
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.domain.chapter.interactor.GetChapter
+import yokai.domain.manga.interactor.GetLibraryManga
+import yokai.domain.manga.interactor.UpdateManga
+import yokai.domain.manga.models.cover
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class LibraryUpdateJob(private val context: Context, workerParams: WorkerParameters) :
     CoroutineWorker(context, workerParams) {

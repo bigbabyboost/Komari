@@ -1,4 +1,4 @@
-package Komari.presentation.theme
+package yokai.presentation.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -7,7 +7,7 @@ import androidx.compose.ui.unit.LayoutDirection
 import com.google.accompanist.themeadapter.material3.createMdc3Theme
 
 @Composable
-fun KomariTheme(content: @Composable () -> Unit) {
+fun YokaiTheme(content: @Composable () -> Unit) {
     val context = LocalContext.current
 
     val (colourScheme) =

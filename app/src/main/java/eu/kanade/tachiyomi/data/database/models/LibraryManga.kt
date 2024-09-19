@@ -2,7 +2,7 @@ package eu.kanade.tachiyomi.data.database.models
 
 import eu.kanade.tachiyomi.ui.library.LibraryItem
 import kotlin.math.roundToInt
-import Komari.data.updateStrategyAdapter
+import yokai.data.updateStrategyAdapter
 
 data class LibraryManga(
     var unread: Int = 0,

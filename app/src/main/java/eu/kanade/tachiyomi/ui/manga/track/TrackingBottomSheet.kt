@@ -63,8 +63,8 @@ import eu.kanade.tachiyomi.util.view.setTitleText
 import eu.kanade.tachiyomi.widget.E2EBottomSheetDialog
 import java.text.DateFormat
 import java.util.Calendar
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import android.R as AR
 
 class TrackingBottomSheet(private val controller: MangaDetailsController) :

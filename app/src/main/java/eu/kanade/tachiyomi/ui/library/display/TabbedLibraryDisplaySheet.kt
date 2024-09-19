@@ -6,8 +6,8 @@ import androidx.core.view.isVisible
 import com.bluelinelabs.conductor.Controller
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.ui.library.LibraryController
 import eu.kanade.tachiyomi.ui.setting.controllers.SettingsLibraryController

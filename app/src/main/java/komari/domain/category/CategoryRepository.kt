@@ -1,4 +1,4 @@
-package Komari.domain.category
+package yokai.domain.category
 
 import eu.kanade.tachiyomi.data.database.models.Category
 import kotlinx.coroutines.flow.Flow

@@ -3,8 +3,8 @@ package eu.kanade.tachiyomi.ui.reader.settings
 import androidx.annotation.StringRes
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 
 enum class PageLayout(

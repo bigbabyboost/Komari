@@ -4,7 +4,7 @@ import android.content.Context
 import android.widget.Toast
 import androidx.annotation.StringRes
 import dev.icerock.moko.resources.StringResource
-import Komari.util.lang.getString
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 
 /**

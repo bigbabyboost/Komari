@@ -1,10 +1,10 @@
-package Komari.core.migration.migrations
+package yokai.core.migration.migrations
 
 import android.app.Application
 import androidx.preference.PreferenceManager
-import Komari.core.migration.Migration
-import Komari.core.migration.MigrationContext
-import Komari.domain.base.BasePreferences
+import yokai.core.migration.Migration
+import yokai.core.migration.MigrationContext
+import yokai.domain.base.BasePreferences
 
 /**
  * Upstream no longer use Int for extension installer prefs, this solves incompatibility with upstreams backup

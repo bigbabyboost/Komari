@@ -21,8 +21,8 @@ import eu.kanade.tachiyomi.util.chapter.ChapterUtil.Companion.preferredChapterNa
 import eu.kanade.tachiyomi.util.system.contextCompatDrawable
 import eu.kanade.tachiyomi.util.system.dpToPx
 import uy.kohesive.injekt.injectLazy
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import kotlin.math.roundToInt
 
 class ReaderTransitionView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :

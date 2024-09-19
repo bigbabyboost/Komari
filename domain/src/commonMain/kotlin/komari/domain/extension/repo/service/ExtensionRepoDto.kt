@@ -1,7 +1,7 @@
-package Komari.domain.extension.repo.service
+package yokai.domain.extension.repo.service
 
 import kotlinx.serialization.Serializable
-import Komari.domain.extension.repo.model.ExtensionRepo
+import yokai.domain.extension.repo.model.ExtensionRepo
 
 @Serializable
 data class ExtensionRepoMetaDto(

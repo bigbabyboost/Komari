@@ -1,4 +1,4 @@
-package Komari.core.migration
+package yokai.core.migration
 
 import co.touchlab.kermit.Logger
 import kotlinx.coroutines.CompletableDeferred

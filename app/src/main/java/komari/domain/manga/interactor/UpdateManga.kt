@@ -1,7 +1,7 @@
-package Komari.domain.manga.interactor
+package yokai.domain.manga.interactor
 
-import Komari.domain.manga.MangaRepository
-import Komari.domain.manga.models.MangaUpdate
+import yokai.domain.manga.MangaRepository
+import yokai.domain.manga.models.MangaUpdate
 
 class UpdateManga (
     private val mangaRepository: MangaRepository,

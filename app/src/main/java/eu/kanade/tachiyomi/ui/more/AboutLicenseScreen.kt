@@ -10,10 +10,10 @@ import com.mikepenz.aboutlibraries.ui.compose.m3.util.htmlReadyLicenseContent
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.util.compose.LocalBackPress
 import eu.kanade.tachiyomi.util.compose.currentOrThrow
-import Komari.i18n.MR
-import Komari.presentation.AppBarType
-import Komari.presentation.KomariScaffold
-import Komari.util.Screen
+import yokai.i18n.MR
+import yokai.presentation.AppBarType
+import yokai.presentation.YokaiScaffold
+import yokai.util.Screen
 
 class AboutLicenseScreen : Screen() {
     @Composable
@@ -21,7 +21,7 @@ class AboutLicenseScreen : Screen() {
         val navigator = LocalNavigator.currentOrThrow
         val backPress = LocalBackPress.currentOrThrow
 
-        KomariScaffold(
+        YokaiScaffold(
             onNavigationIconClicked = backPress,
             title = stringResource(MR.strings.open_source_licenses),
             appBarType = AppBarType.SMALL,

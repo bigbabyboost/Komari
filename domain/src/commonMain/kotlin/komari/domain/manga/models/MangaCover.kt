@@ -1,4 +1,4 @@
-package Komari.domain.manga.models
+package yokai.domain.manga.models
 
 import eu.kanade.tachiyomi.domain.manga.models.Manga as TachiManga
 

@@ -13,8 +13,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.util.*
 
 class Cubari : DelegatedHttpSource() {

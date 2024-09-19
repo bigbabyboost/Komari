@@ -1,9 +1,9 @@
-package Komari.core.migration.migrations
+package yokai.core.migration.migrations
 
 import android.app.Application
 import eu.kanade.tachiyomi.data.backup.create.BackupCreatorJob
-import Komari.core.migration.Migration
-import Komari.core.migration.MigrationContext
+import yokai.core.migration.Migration
+import yokai.core.migration.MigrationContext
 
 class SetupBackupCreateMigration : Migration {
     override val version: Float = Migration.ALWAYS

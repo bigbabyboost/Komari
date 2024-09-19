@@ -1,4 +1,4 @@
-package Komari.domain.recents
+package yokai.domain.recents
 
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 import eu.kanade.tachiyomi.core.preference.getEnum

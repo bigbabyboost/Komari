@@ -33,9 +33,9 @@ import eu.kanade.tachiyomi.util.view.setAnimVectorCompat
 import eu.kanade.tachiyomi.util.view.setCards
 import java.util.Date
 import java.util.concurrent.TimeUnit
-import Komari.i18n.MR
-import Komari.presentation.core.util.coil.loadManga
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.presentation.core.util.coil.loadManga
+import yokai.util.lang.getString
 import android.R as AR
 
 class RecentMangaHolder(

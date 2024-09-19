@@ -33,7 +33,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - Update dependency com.android.tools:desugar_jdk_libs to v2.1.2
 - Update moko to v0.24.2
 - Refactor trackers to use DTOs (@MajorTanya)
-- Replace com.github.inorichi.injekt with com.github.bigbabyboost.injekt
+- Replace com.github.inorichi.injekt with com.github.null2264.injekt
 
 ## [v1.8.5.7]
 
@@ -85,7 +85,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - More StorIO to SQLDelight migration effort
 - Target Android 15
 - Adjust manga cover cache key
-- Refactor manga cover fetcher (@ivaniskandar, @AntsyLich, @bigbabyboost)
+- Refactor manga cover fetcher (@ivaniskandar, @AntsyLich, @null2264)
 
 ## [v1.8.5.2]
 
@@ -151,7 +151,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
   - Rewrite Migrator (@ghostbear)
   - Split the project into several modules
   - Migrated i18n to use Moko Resources
-  - Removed unnecessary dependencies (@bigbabyboost, @nonproto)
+  - Removed unnecessary dependencies (@null2264, @nonproto)
 - Update firebase bom to v33.1.0
 - Replace com.google.android.gms:play-services-oss-licenses with com.mikepenz:aboutlibraries
 - Update dependency com.google.gms:google-services to v4.4.2
@@ -259,7 +259,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 ### Fixes
 - Fixed crashes caused by invalid ComicInfo XML
 
-  If this caused your custom manga info to stop working, try resetting it by deleting `ComicInfoEdits.xml` file located in `Android/data/eu.kanade.tachiyomi.Komari`
+  If this caused your custom manga info to stop working, try resetting it by deleting `ComicInfoEdits.xml` file located in `Android/data/eu.kanade.tachiyomi.yokai`
 
 - Fixed crashes caused by the app trying to round NaN value
 
@@ -370,13 +370,13 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 
 ### Fixes
 - Fixed cutout behaviour for Android P
-- Fixed some extensions doesn't detect "added to library" entries properly ([GH-40](https://github.com/bigbabyboost/Komari/issues/40))
+- Fixed some extensions doesn't detect "added to library" entries properly ([GH-40](https://github.com/null2264/yokai/issues/40))
 - Fixed nightly and debug variant doesn't include their respective prefix on their app name
 - Fixed nightly version checker
 
 ### Other
 - Update dependency com.github.tachiyomiorg:image-decoder to e08e9be535
-- Update dependency com.github.bigbabyboost:subsampling-scale-image-view to 338caedb5f
+- Update dependency com.github.null2264:subsampling-scale-image-view to 338caedb5f
 - Added Unit Test for version checker
 - Use Coil pipeline instead of SSIV for image decode whenever possible, might improve webtoon performance
 - Migrated from Coil2 to Coil3
@@ -467,8 +467,8 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - Split PreferencesHelper even more
 - Simplify extension install issue fix (@AwkwardPeak7)
 - Update dependency com.github.tachiyomiorg:image-decoder to fbd6601290
-- Replace dependency com.github.jays2kings:subsampling-scale-image-view with com.github.bigbabyboost:subsampling-scale-image-view
-- Update dependency com.github.bigbabyboost:subsampling-scale-image-view to e3cffd59c5
+- Replace dependency com.github.jays2kings:subsampling-scale-image-view with com.github.null2264:subsampling-scale-image-view
+- Update dependency com.github.null2264:subsampling-scale-image-view to e3cffd59c5
 
 ## [1.7.11]
 
@@ -506,7 +506,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 ## [1.7.8]
 
 ### Changes
-- Local source now try to find entries not only in `Yōkai/` but also in `Komari/` and `TachiyomiJ2K/` for easier migration
+- Local source now try to find entries not only in `Yōkai/` but also in `Yokai/` and `TachiyomiJ2K/` for easier migration
 
 ### Other
 - Changed AniList and MAL clientId, you may need to logout and re-login

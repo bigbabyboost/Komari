@@ -1,3 +1,3 @@
-package Komari.core.archive
+package yokai.core.archive
 
 expect abstract class ArchiveReader

@@ -1,4 +1,4 @@
-package Komari.presentation.component
+package yokai.presentation.component
 
 import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable

@@ -46,7 +46,7 @@ import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.i18n.MR
+import yokai.i18n.MR
 import java.io.File
 import java.util.*
 import kotlin.math.max

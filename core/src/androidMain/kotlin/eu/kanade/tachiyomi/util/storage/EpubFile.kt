@@ -5,7 +5,7 @@ import java.io.File
 import java.io.InputStream
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import Komari.core.archive.ArchiveReader
+import yokai.core.archive.ArchiveReader
 
 /**
  * Wrapper over ZipFile to load files in epub format.

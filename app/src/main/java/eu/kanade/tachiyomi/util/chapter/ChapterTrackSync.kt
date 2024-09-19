@@ -18,7 +18,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.domain.chapter.interactor.UpdateChapter
+import yokai.domain.chapter.interactor.UpdateChapter
 
 /**
  * Helper method for syncing a remote track with the local chapters, and back

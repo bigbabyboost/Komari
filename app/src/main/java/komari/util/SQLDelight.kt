@@ -1,4 +1,4 @@
-package Komari.util
+package yokai.util
 
 import eu.kanade.tachiyomi.ui.recents.RecentsPresenter
 

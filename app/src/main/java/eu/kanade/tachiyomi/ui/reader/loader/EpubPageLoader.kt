@@ -3,7 +3,7 @@ package eu.kanade.tachiyomi.ui.reader.loader
 import eu.kanade.tachiyomi.source.model.Page
 import eu.kanade.tachiyomi.ui.reader.model.ReaderPage
 import eu.kanade.tachiyomi.util.storage.EpubFile
-import Komari.core.archive.ArchiveReader
+import yokai.core.archive.ArchiveReader
 
 /**
  * Loader used to load a chapter from a .epub file.

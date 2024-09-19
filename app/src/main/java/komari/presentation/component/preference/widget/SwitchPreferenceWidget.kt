@@ -1,4 +1,4 @@
-package Komari.presentation.component.preference.widget
+package yokai.presentation.component.preference.widget
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Switch

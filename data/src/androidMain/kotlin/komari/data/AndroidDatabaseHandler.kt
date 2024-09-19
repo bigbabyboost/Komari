@@ -1,4 +1,4 @@
-package Komari.data
+package yokai.data
 
 import app.cash.sqldelight.ExecutableQuery
 import app.cash.sqldelight.Query

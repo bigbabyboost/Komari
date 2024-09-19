@@ -41,8 +41,8 @@ import io.noties.markwon.Markwon
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
@@ -72,7 +72,7 @@ class AboutController : SettingsLegacyController() {
                 val intent = Intent(
                     Intent.ACTION_VIEW,
                     if (BuildConfig.DEBUG) {
-                        "https://github.com/bigbabyboost/Komari/commits/master"
+                        "https://github.com/null2264/yokai/commits/master"
                     } else {
                         RELEASE_URL
                     }.toUri(),

@@ -1,9 +1,9 @@
-package Komari.data.history
+package yokai.data.history
 
 import eu.kanade.tachiyomi.data.database.models.MangaChapterHistory
 import eu.kanade.tachiyomi.util.system.toInt
-import Komari.data.DatabaseHandler
-import Komari.domain.history.HistoryRepository
+import yokai.data.DatabaseHandler
+import yokai.domain.history.HistoryRepository
 
 class HistoryRepositoryImpl(private val handler: DatabaseHandler) : HistoryRepository {
     override suspend fun getRecentsUngrouped(

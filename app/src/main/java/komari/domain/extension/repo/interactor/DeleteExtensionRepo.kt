@@ -1,6 +1,6 @@
-package Komari.domain.extension.repo.interactor
+package yokai.domain.extension.repo.interactor
 
-import Komari.domain.extension.repo.ExtensionRepoRepository
+import yokai.domain.extension.repo.ExtensionRepoRepository
 
 class DeleteExtensionRepo(
     private val extensionRepoRepository: ExtensionRepoRepository

@@ -1,13 +1,13 @@
-package Komari.core.migration.migrations
+package yokai.core.migration.migrations
 
 import co.touchlab.kermit.Logger
 import eu.kanade.tachiyomi.core.preference.Preference
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 import eu.kanade.tachiyomi.util.system.withIOContext
-import Komari.core.migration.Migration
-import Komari.core.migration.MigrationContext
-import Komari.domain.extension.repo.ExtensionRepoRepository
-import Komari.domain.extension.repo.exception.SaveExtensionRepoException
+import yokai.core.migration.Migration
+import yokai.core.migration.MigrationContext
+import yokai.domain.extension.repo.ExtensionRepoRepository
+import yokai.domain.extension.repo.exception.SaveExtensionRepoException
 
 class RepoJsonMigration : Migration {
     override val version: Float = 130f

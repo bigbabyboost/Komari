@@ -16,8 +16,8 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.domain.ui.settings.ReaderPreferences
-import Komari.domain.ui.settings.ReaderPreferences.CutoutBehaviour
+import yokai.domain.ui.settings.ReaderPreferences
+import yokai.domain.ui.settings.ReaderPreferences.CutoutBehaviour
 
 /**
  * Configuration used by pager viewers.

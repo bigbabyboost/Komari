@@ -10,9 +10,9 @@ import eu.kanade.tachiyomi.ui.reader.ReaderActivity
 import eu.kanade.tachiyomi.ui.recents.RecentsController
 import eu.kanade.tachiyomi.util.view.RecyclerWindowInsetsListener
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.recents.RecentsPreferences
-import Komari.domain.ui.UiPreferences
-import Komari.domain.ui.settings.ReaderPreferences
+import yokai.domain.recents.RecentsPreferences
+import yokai.domain.ui.UiPreferences
+import yokai.domain.ui.settings.ReaderPreferences
 
 abstract class BaseTabbedScrollView<VB : ViewBinding> @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :
     NestedScrollView(context, attrs) {

@@ -1,4 +1,4 @@
-package Komari.domain.manga.models
+package yokai.domain.manga.models
 
 import eu.kanade.tachiyomi.source.model.UpdateStrategy
 import java.io.Serializable

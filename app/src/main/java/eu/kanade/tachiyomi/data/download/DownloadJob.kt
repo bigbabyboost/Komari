@@ -26,8 +26,8 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 /**
  * This worker is used to manage the downloader. The system can decide to stop the worker, in

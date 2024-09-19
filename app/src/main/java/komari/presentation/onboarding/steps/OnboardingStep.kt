@@ -1,4 +1,4 @@
-package Komari.presentation.onboarding.steps
+package yokai.presentation.onboarding.steps
 
 import androidx.compose.runtime.Composable
 

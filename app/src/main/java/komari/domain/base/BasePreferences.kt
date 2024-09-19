@@ -1,11 +1,11 @@
-package Komari.domain.base
+package yokai.domain.base
 
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.core.preference.Preference
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 import eu.kanade.tachiyomi.core.preference.getEnum
 import eu.kanade.tachiyomi.extension.util.ExtensionInstaller
-import Komari.i18n.MR
+import yokai.i18n.MR
 
 class BasePreferences(private val preferenceStore: PreferenceStore) {
     fun extensionInstaller() = preferenceStore.getEnum("extension_installer", ExtensionInstaller.PACKAGEINSTALLER)

@@ -23,8 +23,8 @@ import eu.kanade.tachiyomi.util.system.openInBrowser
 import eu.kanade.tachiyomi.util.system.toast
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import uy.kohesive.injekt.injectLazy
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 open class WebViewActivity : BaseWebViewActivity() {
 

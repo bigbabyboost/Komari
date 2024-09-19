@@ -64,8 +64,8 @@ import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.injectLazy
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.util.concurrent.atomic.*
 import kotlin.coroutines.CoroutineContext
 import android.R as AR

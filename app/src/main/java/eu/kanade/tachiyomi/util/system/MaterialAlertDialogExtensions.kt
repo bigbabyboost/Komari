@@ -18,7 +18,7 @@ import eu.kanade.tachiyomi.databinding.DialogQuadstateBinding
 import eu.kanade.tachiyomi.widget.TriStateCheckBox
 import eu.kanade.tachiyomi.widget.materialdialogs.TriStateMultiChoiceDialogAdapter
 import eu.kanade.tachiyomi.widget.materialdialogs.TriStateMultiChoiceListener
-import Komari.util.lang.getString
+import yokai.util.lang.getString
 
 fun Context.materialAlertDialog() = MaterialAlertDialogBuilder(withOriginalWidth())
 

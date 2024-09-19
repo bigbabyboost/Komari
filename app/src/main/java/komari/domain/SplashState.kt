@@ -1,4 +1,4 @@
-package Komari.domain
+package yokai.domain
 
 class SplashState {
     var shown = false

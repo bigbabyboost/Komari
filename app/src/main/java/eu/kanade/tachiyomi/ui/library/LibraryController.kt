@@ -135,9 +135,9 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.domain.ui.UiPreferences
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.domain.ui.UiPreferences
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.util.*
 import kotlin.math.abs
 import kotlin.math.max

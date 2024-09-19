@@ -18,8 +18,8 @@ import eu.kanade.tachiyomi.util.system.getResourceColor
 import eu.kanade.tachiyomi.util.system.timeSpanFromNow
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class ChapterUtil {
     companion object {

@@ -1,4 +1,4 @@
-package Komari.core.migration
+package yokai.core.migration
 
 interface Migration {
     val version: Float

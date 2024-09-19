@@ -92,11 +92,11 @@ android {
 
     buildTypes {
         getByName("debug") {
-            applicationIdSuffix = ".debugKomari"
+            applicationIdSuffix = ".debugYokai"
             versionNameSuffix = "-d${commitCount}"
         }
         getByName("release") {
-            applicationIdSuffix = ".Komari"
+            applicationIdSuffix = ".yokai"
             isShrinkResources = true
             isMinifyEnabled = true
             proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
@@ -116,7 +116,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks.add("release")
             versionNameSuffix = "-r${commitCount}"
-            applicationIdSuffix = ".nightlyKomari"
+            applicationIdSuffix = ".nightlyYokai"
         }
     }
 
@@ -302,12 +302,12 @@ tasks {
             compilerOptions.freeCompilerArgs.addAll(
                 "-P",
                 "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination=" +
-                    (project.layout.buildDirectory.asFile.orNull?.absolutePath ?: "/tmp/Komari") + "/compose_metrics",
+                    (project.layout.buildDirectory.asFile.orNull?.absolutePath ?: "/tmp/yokai") + "/compose_metrics",
             )
             compilerOptions.freeCompilerArgs.addAll(
                 "-P",
                 "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=" +
-                        (project.layout.buildDirectory.asFile.orNull?.absolutePath ?: "/tmp/Komari") + "/compose_metrics",
+                        (project.layout.buildDirectory.asFile.orNull?.absolutePath ?: "/tmp/yokai") + "/compose_metrics",
             )
         }
     }

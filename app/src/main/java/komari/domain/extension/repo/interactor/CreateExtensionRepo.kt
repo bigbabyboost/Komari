@@ -1,13 +1,13 @@
-package Komari.domain.extension.repo.interactor
+package yokai.domain.extension.repo.interactor
 
 import co.touchlab.kermit.Logger
 import eu.kanade.tachiyomi.network.NetworkHelper
 import okhttp3.OkHttpClient
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.extension.repo.ExtensionRepoRepository
-import Komari.domain.extension.repo.exception.SaveExtensionRepoException
-import Komari.domain.extension.repo.model.ExtensionRepo
-import Komari.domain.extension.repo.service.ExtensionRepoService
+import yokai.domain.extension.repo.ExtensionRepoRepository
+import yokai.domain.extension.repo.exception.SaveExtensionRepoException
+import yokai.domain.extension.repo.model.ExtensionRepo
+import yokai.domain.extension.repo.service.ExtensionRepoService
 
 class CreateExtensionRepo(
     private val extensionRepoRepository: ExtensionRepoRepository

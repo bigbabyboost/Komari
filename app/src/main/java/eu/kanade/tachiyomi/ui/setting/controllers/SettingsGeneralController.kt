@@ -11,8 +11,8 @@ import androidx.core.os.LocaleListCompat
 import androidx.preference.PreferenceScreen
 import eu.kanade.tachiyomi.BuildConfig
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.data.updater.AppDownloadInstallJob
 import eu.kanade.tachiyomi.ui.setting.SettingsLegacyController
@@ -32,7 +32,7 @@ import eu.kanade.tachiyomi.ui.setting.titleMRes as titleRes
 import eu.kanade.tachiyomi.util.lang.addBetaTag
 import eu.kanade.tachiyomi.util.lang.compareToCaseInsensitiveNaturalOrder
 import eu.kanade.tachiyomi.util.system.systemLangContext
-import Komari.domain.base.BasePreferences
+import yokai.domain.base.BasePreferences
 import java.util.*
 import eu.kanade.tachiyomi.data.preference.PreferenceKeys as Keys
 

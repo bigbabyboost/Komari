@@ -1,4 +1,4 @@
-package Komari.util
+package yokai.util
 
 import kotlin.math.max
 import kotlin.math.min

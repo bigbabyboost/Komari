@@ -1,4 +1,4 @@
-package Komari.core.archive
+package yokai.core.archive
 
 class ArchiveEntry(
     val name: String,

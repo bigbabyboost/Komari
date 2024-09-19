@@ -1,4 +1,4 @@
-package Komari.core.archive
+package yokai.core.archive
 
 import java.io.Closeable
 import java.io.InputStream

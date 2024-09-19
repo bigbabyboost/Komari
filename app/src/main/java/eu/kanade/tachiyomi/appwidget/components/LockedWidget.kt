@@ -17,7 +17,7 @@ import androidx.glance.text.TextAlign
 import androidx.glance.text.TextStyle
 import androidx.glance.unit.ColorProvider
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
+import yokai.i18n.MR
 import eu.kanade.tachiyomi.appwidget.ContainerModifier
 import eu.kanade.tachiyomi.appwidget.util.stringResource
 import eu.kanade.tachiyomi.ui.main.MainActivity

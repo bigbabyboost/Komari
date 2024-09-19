@@ -1,7 +1,7 @@
-package Komari.domain.manga.interactor
+package yokai.domain.manga.interactor
 
 import eu.kanade.tachiyomi.domain.manga.models.Manga
-import Komari.domain.manga.MangaRepository
+import yokai.domain.manga.MangaRepository
 
 class InsertManga (
     private val mangaRepository: MangaRepository,

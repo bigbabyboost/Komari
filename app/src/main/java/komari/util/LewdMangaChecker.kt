@@ -1,4 +1,4 @@
-package Komari.util
+package yokai.util
 
 import eu.kanade.tachiyomi.domain.manga.models.Manga
 import eu.kanade.tachiyomi.source.SourceManager

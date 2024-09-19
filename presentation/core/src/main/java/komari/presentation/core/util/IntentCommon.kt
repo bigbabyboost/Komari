@@ -1,8 +1,8 @@
-package Komari.presentation.core.util
+package yokai.presentation.core.util
 
 import android.content.Context
 import android.content.Intent
-import Komari.presentation.core.Constants
+import yokai.presentation.core.Constants
 
 object IntentCommon {
     fun openManga(context: Context, id: Long?, canReturnToMain: Boolean = false) =

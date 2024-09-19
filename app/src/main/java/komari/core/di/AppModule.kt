@@ -1,4 +1,4 @@
-package Komari.core.di
+package yokai.core.di
 
 import android.app.Application
 import androidx.sqlite.db.SupportSQLiteOpenHelper
@@ -29,11 +29,11 @@ import nl.adaptivity.xmlutil.serialization.XML
 import org.koin.core.module.dsl.createdAtStart
 import org.koin.core.module.dsl.withOptions
 import org.koin.dsl.module
-import Komari.data.AndroidDatabaseHandler
-import Komari.data.Database
-import Komari.data.DatabaseHandler
-import Komari.domain.SplashState
-import Komari.domain.storage.StorageManager
+import yokai.data.AndroidDatabaseHandler
+import yokai.data.Database
+import yokai.data.DatabaseHandler
+import yokai.domain.SplashState
+import yokai.domain.storage.StorageManager
 
 fun appModule(app: Application) = module {
     single { app }

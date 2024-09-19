@@ -1,4 +1,4 @@
-package Komari.presentation.component
+package yokai.presentation.component
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.AbstractComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import eu.kanade.tachiyomi.R
-import Komari.presentation.theme.KomariTheme
+import yokai.presentation.theme.YokaiTheme
 
 class LoadingButtonComposeView @JvmOverloads constructor(
     context: Context,
@@ -53,7 +53,7 @@ class LoadingButtonComposeView @JvmOverloads constructor(
 
     @Composable
     override fun Content() {
-        KomariTheme {
+        YokaiTheme {
             Box(
                 modifier = Modifier.fillMaxWidth(),
                 contentAlignment = Alignment.Center,

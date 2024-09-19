@@ -43,7 +43,7 @@ jobs:
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0"
 
       - name: Setup Gradle
-        uses: bigbabyboost/actions/gradle-setup@a4d662095a2f2af1ed24f1228eb6e55b0f9f1f29
+        uses: null2264/actions/gradle-setup@a4d662095a2f2af1ed24f1228eb6e55b0f9f1f29
         with:
           java: 17
           distro: adopt
@@ -154,7 +154,7 @@ jobs:
           echo "STAGE=${stage}" >> $GITHUB_OUTPUT
 
       - name: Sign APK
-        uses: bigbabyboost/actions/android-signer@a4d662095a2f2af1ed24f1228eb6e55b0f9f1f29
+        uses: null2264/actions/android-signer@a4d662095a2f2af1ed24f1228eb6e55b0f9f1f29
         if: env.VERSION_TAG != ''
         with:
           releaseDir: app/build/outputs/apk/standard/${{ steps.version_stage.outputs.STAGE }}
@@ -171,24 +171,24 @@ jobs:
 
           dir="app/build/outputs/apk/standard/${{ steps.version_stage.outputs.STAGE }}"
 
-          mv $dir/app-standard-universal-*-signed.apk Komari-${{ env.VERSION_TAG }}.apk
-          sha=`sha256sum Komari-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
+          mv $dir/app-standard-universal-*-signed.apk yokai-${{ env.VERSION_TAG }}.apk
+          sha=`sha256sum yokai-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
           echo "APK_UNIVERSAL_SHA=$sha" >> $GITHUB_ENV
 
-          cp $dir/app-standard-arm64-v8a-*-signed.apk Komari-arm64-v8a-${{ env.VERSION_TAG }}.apk
-          sha=`sha256sum Komari-arm64-v8a-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
+          cp $dir/app-standard-arm64-v8a-*-signed.apk yokai-arm64-v8a-${{ env.VERSION_TAG }}.apk
+          sha=`sha256sum yokai-arm64-v8a-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
           echo "APK_ARM64_V8A_SHA=$sha" >> $GITHUB_ENV
 
-          cp $dir/app-standard-armeabi-v7a-*-signed.apk Komari-armeabi-v7a-${{ env.VERSION_TAG }}.apk
-          sha=`sha256sum Komari-armeabi-v7a-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
+          cp $dir/app-standard-armeabi-v7a-*-signed.apk yokai-armeabi-v7a-${{ env.VERSION_TAG }}.apk
+          sha=`sha256sum yokai-armeabi-v7a-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
           echo "APK_ARMEABI_V7A_SHA=$sha" >> $GITHUB_ENV
 
-          cp $dir/app-standard-x86-*-signed.apk Komari-x86-${{ env.VERSION_TAG }}.apk
-          sha=`sha256sum Komari-x86-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
+          cp $dir/app-standard-x86-*-signed.apk yokai-x86-${{ env.VERSION_TAG }}.apk
+          sha=`sha256sum yokai-x86-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
           echo "APK_X86_SHA=$sha" >> $GITHUB_ENV
           
-          cp $dir/app-standard-x86_64-*-signed.apk Komari-x86_64-${{ env.VERSION_TAG }}.apk
-          sha=`sha256sum Komari-x86_64-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
+          cp $dir/app-standard-x86_64-*-signed.apk yokai-x86_64-${{ env.VERSION_TAG }}.apk
+          sha=`sha256sum yokai-x86_64-${{ env.VERSION_TAG }}.apk | awk '{ print $1 }'`
           echo "APK_X86_64_SHA=$sha" >> $GITHUB_ENV
 
       - name: Create Release
@@ -215,13 +215,13 @@ jobs:
             
             > [!TIP]
             >
-            > If you are unsure which version to download then go with **Komari-${{ env.VERSION_TAG }}.apk**
+            > If you are unsure which version to download then go with **yokai-${{ env.VERSION_TAG }}.apk**
           files: |
-            Komari-${{ env.VERSION_TAG }}.apk
-            Komari-arm64-v8a-${{ env.VERSION_TAG }}.apk
-            Komari-armeabi-v7a-${{ env.VERSION_TAG }}.apk
-            Komari-x86-${{ env.VERSION_TAG }}.apk
-            Komari-x86_64-${{ env.VERSION_TAG }}.apk
+            yokai-${{ env.VERSION_TAG }}.apk
+            yokai-arm64-v8a-${{ env.VERSION_TAG }}.apk
+            yokai-armeabi-v7a-${{ env.VERSION_TAG }}.apk
+            yokai-x86-${{ env.VERSION_TAG }}.apk
+            yokai-x86_64-${{ env.VERSION_TAG }}.apk
           draft: true
           prerelease: ${{ github.event.inputs.beta }}
         env:
@@ -231,16 +231,16 @@ jobs:
         if: startsWith(env.VERSION_TAG, 'r')
         uses: softprops/action-gh-release@v2
         with:
-          repository: bigbabyboost/Komari-nightly
+          repository: null2264/yokai-nightly
           tag_name: ${{ env.VERSION_TAG }}
           name: Yōkai Nightly (${{ env.VERSION_TAG }})
           body: |
             > [!CAUTION]
             > _**This alpha version is for testing only!**_
             >
-            > This build is triggered by commit [`${{ env.COMMIT_SHORT_HASH }}`](https://github.com/bigbabyboost/Komari/commit/${{ env.COMMIT_HASH }})
+            > This build is triggered by commit [`${{ env.COMMIT_SHORT_HASH }}`](https://github.com/null2264/yokai/commit/${{ env.COMMIT_HASH }})
 
-            It is not ready for daily use and we do not guarantee its usability. Please download the latest stable releases instead (https://github.com/bigbabyboost/Komari/releases/latest). If you insist, please be sure to ALWAYS backup before updating.
+            It is not ready for daily use and we do not guarantee its usability. Please download the latest stable releases instead (https://github.com/null2264/yokai/releases/latest). If you insist, please be sure to ALWAYS backup before updating.
             
             ${{ steps.changelog.outputs.CHANGELOG }}
             ---
@@ -257,13 +257,13 @@ jobs:
             
             > [!TIP]
             >
-            > If you are unsure which version to download then go with **Komari-${{ env.VERSION_TAG }}.apk**
+            > If you are unsure which version to download then go with **yokai-${{ env.VERSION_TAG }}.apk**
           files: |
-            Komari-${{ env.VERSION_TAG }}.apk
-            Komari-arm64-v8a-${{ env.VERSION_TAG }}.apk
-            Komari-armeabi-v7a-${{ env.VERSION_TAG }}.apk
-            Komari-x86-${{ env.VERSION_TAG }}.apk
-            Komari-x86_64-${{ env.VERSION_TAG }}.apk
+            yokai-${{ env.VERSION_TAG }}.apk
+            yokai-arm64-v8a-${{ env.VERSION_TAG }}.apk
+            yokai-armeabi-v7a-${{ env.VERSION_TAG }}.apk
+            yokai-x86-${{ env.VERSION_TAG }}.apk
+            yokai-x86_64-${{ env.VERSION_TAG }}.apk
           draft: false
           prerelease: false
         env:

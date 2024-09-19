@@ -1,1 +1,1 @@
-rootProject.name = "Komari-buildSrc"
+rootProject.name = "yokai-buildSrc"

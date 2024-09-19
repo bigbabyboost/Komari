@@ -1,4 +1,4 @@
-package Komari.domain.history
+package yokai.domain.history
 
 import eu.kanade.tachiyomi.data.database.models.MangaChapterHistory
 

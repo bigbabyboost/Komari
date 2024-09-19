@@ -92,8 +92,8 @@ import eu.kanade.tachiyomi.util.view.withFadeTransaction
 import eu.kanade.tachiyomi.widget.LinearLayoutManagerAccurateOffset
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.util.*
 import kotlin.math.max
 import android.R as AR

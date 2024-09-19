@@ -1,4 +1,4 @@
-package Komari.presentation.component
+package yokai.presentation.component
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.LinearEasing

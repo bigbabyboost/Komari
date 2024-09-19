@@ -34,8 +34,8 @@ import eu.kanade.tachiyomi.util.view.setText
 import eu.kanade.tachiyomi.util.view.text
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class LibraryHeaderHolder(val view: View, val adapter: LibraryCategoryAdapter) :
     BaseFlexibleViewHolder(view, adapter, true) {

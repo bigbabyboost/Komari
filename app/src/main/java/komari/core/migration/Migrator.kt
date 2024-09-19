@@ -1,4 +1,4 @@
-package Komari.core.migration
+package yokai.core.migration
 
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope

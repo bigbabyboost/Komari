@@ -1,12 +1,12 @@
-package Komari.data.extension.repo
+package yokai.data.extension.repo
 
 import android.database.sqlite.SQLiteException
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import Komari.data.DatabaseHandler
-import Komari.domain.extension.repo.ExtensionRepoRepository
-import Komari.domain.extension.repo.exception.SaveExtensionRepoException
-import Komari.domain.extension.repo.model.ExtensionRepo
+import yokai.data.DatabaseHandler
+import yokai.domain.extension.repo.ExtensionRepoRepository
+import yokai.domain.extension.repo.exception.SaveExtensionRepoException
+import yokai.domain.extension.repo.model.ExtensionRepo
 
 class ExtensionRepoRepositoryImpl(private val handler: DatabaseHandler): ExtensionRepoRepository {
     override fun subscribeAll(): Flow<List<ExtensionRepo>> =

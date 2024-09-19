@@ -30,8 +30,8 @@ import eu.kanade.tachiyomi.util.view.isExpanded
 import eu.kanade.tachiyomi.util.view.isHidden
 import eu.kanade.tachiyomi.util.view.toolbarHeight
 import uy.kohesive.injekt.injectLazy
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 
 class DownloadBottomSheet @JvmOverloads constructor(
     context: Context,

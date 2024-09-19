@@ -40,11 +40,11 @@ import eu.kanade.tachiyomi.widget.TachiyomiTextInputEditText
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.manga.models.cover
-import Komari.i18n.MR
-import Komari.presentation.core.util.coil.asTarget
-import Komari.presentation.core.util.coil.loadManga
-import Komari.util.lang.getString
+import yokai.domain.manga.models.cover
+import yokai.i18n.MR
+import yokai.presentation.core.util.coil.asTarget
+import yokai.presentation.core.util.coil.loadManga
+import yokai.util.lang.getString
 import android.R as AR
 
 class EditMangaDialog : DialogController {

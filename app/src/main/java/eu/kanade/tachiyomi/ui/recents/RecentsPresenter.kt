@@ -39,12 +39,12 @@ import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.chapter.interactor.GetChapter
-import Komari.domain.chapter.interactor.UpdateChapter
-import Komari.domain.recents.RecentsPreferences
-import Komari.domain.recents.interactor.GetRecents
-import Komari.domain.ui.UiPreferences
-import Komari.i18n.MR
+import yokai.domain.chapter.interactor.GetChapter
+import yokai.domain.chapter.interactor.UpdateChapter
+import yokai.domain.recents.RecentsPreferences
+import yokai.domain.recents.interactor.GetRecents
+import yokai.domain.ui.UiPreferences
+import yokai.i18n.MR
 
 class RecentsPresenter(
     val uiPreferences: UiPreferences = Injekt.get(),

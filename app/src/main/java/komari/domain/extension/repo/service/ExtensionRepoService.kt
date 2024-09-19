@@ -1,4 +1,4 @@
-package Komari.domain.extension.repo.service
+package yokai.domain.extension.repo.service
 
 import androidx.core.net.toUri
 import co.touchlab.kermit.Logger
@@ -9,7 +9,7 @@ import eu.kanade.tachiyomi.util.system.withIOContext
 import kotlinx.serialization.json.Json
 import okhttp3.OkHttpClient
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.extension.repo.model.ExtensionRepo
+import yokai.domain.extension.repo.model.ExtensionRepo
 
 class ExtensionRepoService(
     private val client: OkHttpClient,

@@ -1,8 +1,8 @@
-package Komari.core.migration.migrations
+package yokai.core.migration.migrations
 
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
-import Komari.core.migration.Migration
+import yokai.core.migration.Migration
 
 val migrations: ImmutableList<Migration> = persistentListOf(
     // Always run
@@ -11,7 +11,7 @@ val migrations: ImmutableList<Migration> = persistentListOf(
     SetupExtensionUpdateMigration(),
     SetupLibraryUpdateMigration(),
 
-    // Komari fork
+    // Yokai fork
     CutoutMigration(),
     ExtensionInstallerEnumMigration(),
     RepoJsonMigration(),

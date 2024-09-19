@@ -1,13 +1,13 @@
-package Komari.data.chapter
+package yokai.data.chapter
 
 import co.touchlab.kermit.Logger
 import eu.kanade.tachiyomi.data.database.models.Chapter
 import eu.kanade.tachiyomi.data.database.models.MangaChapter
 import eu.kanade.tachiyomi.util.system.toInt
 import kotlinx.coroutines.flow.Flow
-import Komari.data.DatabaseHandler
-import Komari.domain.chapter.ChapterRepository
-import Komari.domain.chapter.models.ChapterUpdate
+import yokai.data.DatabaseHandler
+import yokai.domain.chapter.ChapterRepository
+import yokai.domain.chapter.models.ChapterUpdate
 
 class ChapterRepositoryImpl(private val handler: DatabaseHandler) : ChapterRepository {
     override suspend fun getChapters(mangaId: Long, filterScanlators: Boolean): List<Chapter> =

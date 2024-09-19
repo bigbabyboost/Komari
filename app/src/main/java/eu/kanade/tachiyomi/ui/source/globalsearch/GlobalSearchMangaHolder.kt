@@ -10,8 +10,8 @@ import eu.kanade.tachiyomi.ui.base.holder.BaseFlexibleViewHolder
 import eu.kanade.tachiyomi.util.system.dpToPx
 import eu.kanade.tachiyomi.util.view.makeShapeCorners
 import eu.kanade.tachiyomi.util.view.setCards
-import Komari.domain.manga.models.cover
-import Komari.presentation.core.util.coil.loadManga
+import yokai.domain.manga.models.cover
+import yokai.presentation.core.util.coil.loadManga
 
 class GlobalSearchMangaHolder(view: View, adapter: GlobalSearchCardAdapter) :
     BaseFlexibleViewHolder(view, adapter) {

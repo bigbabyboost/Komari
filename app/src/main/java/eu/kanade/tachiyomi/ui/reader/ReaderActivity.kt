@@ -162,11 +162,11 @@ import kotlinx.coroutines.flow.sample
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.base.BasePreferences
-import Komari.domain.ui.settings.ReaderPreferences
-import Komari.domain.ui.settings.ReaderPreferences.LandscapeCutoutBehaviour
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.domain.base.BasePreferences
+import yokai.domain.ui.settings.ReaderPreferences
+import yokai.domain.ui.settings.ReaderPreferences.LandscapeCutoutBehaviour
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import java.io.ByteArrayOutputStream
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols

@@ -15,8 +15,8 @@ import kotlinx.coroutines.runBlocking
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.manga.interactor.GetManga
-import Komari.domain.storage.StorageManager
+import yokai.domain.manga.interactor.GetManga
+import yokai.domain.storage.StorageManager
 import java.util.concurrent.*
 
 /**

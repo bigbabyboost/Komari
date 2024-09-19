@@ -4,7 +4,7 @@ import eu.kanade.tachiyomi.data.backup.models.BackupCategory
 import eu.kanade.tachiyomi.data.database.DatabaseHelper
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import Komari.domain.category.interactor.GetCategories
+import yokai.domain.category.interactor.GetCategories
 
 class CategoriesBackupRestorer(
     private val db: DatabaseHelper = Injekt.get(),

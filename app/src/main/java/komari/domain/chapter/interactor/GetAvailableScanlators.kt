@@ -1,6 +1,6 @@
-package Komari.domain.chapter.interactor
+package yokai.domain.chapter.interactor
 
-import Komari.domain.chapter.ChapterRepository
+import yokai.domain.chapter.ChapterRepository
 
 class GetAvailableScanlators(
     private val chapterRepository: ChapterRepository,

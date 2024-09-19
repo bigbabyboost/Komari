@@ -9,8 +9,8 @@ import android.widget.FrameLayout
 import androidx.core.graphics.ColorUtils
 import androidx.core.view.updateLayoutParams
 import eu.kanade.tachiyomi.R
-import Komari.i18n.MR
-import Komari.util.lang.getString
+import yokai.i18n.MR
+import yokai.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.databinding.TriStateCheckBoxBinding
 import eu.kanade.tachiyomi.util.system.getResourceColor

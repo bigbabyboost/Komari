@@ -25,7 +25,7 @@ import eu.kanade.tachiyomi.util.system.dpToPx
 import eu.kanade.tachiyomi.util.view.compatToolTipText
 import eu.kanade.tachiyomi.widget.AutofitRecyclerView
 import uy.kohesive.injekt.injectLazy
-import Komari.domain.ui.UiPreferences
+import yokai.domain.ui.UiPreferences
 
 class LibraryItem(
     val manga: LibraryManga,
