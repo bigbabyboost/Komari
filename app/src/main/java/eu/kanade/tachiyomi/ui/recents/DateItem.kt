@@ -14,8 +14,8 @@ import eu.kanade.tachiyomi.R
 import eu.kanade.tachiyomi.util.system.dpToPx
 import eu.kanade.tachiyomi.util.system.spToPx
 import eu.kanade.tachiyomi.util.system.timeSpanFromNow
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import java.util.*
 
 class DateItem(val date: Date, val addedString: Boolean = false) : AbstractHeaderItem<DateItem.Holder>() {

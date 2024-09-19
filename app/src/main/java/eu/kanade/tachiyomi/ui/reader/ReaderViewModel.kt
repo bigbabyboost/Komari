@@ -77,18 +77,18 @@ import rx.schedulers.Schedulers
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.domain.chapter.interactor.InsertChapter
-import yokai.domain.chapter.interactor.UpdateChapter
-import yokai.domain.chapter.models.ChapterUpdate
-import yokai.domain.download.DownloadPreferences
-import yokai.domain.manga.interactor.GetManga
-import yokai.domain.manga.interactor.InsertManga
-import yokai.domain.manga.interactor.UpdateManga
-import yokai.domain.manga.models.MangaUpdate
-import yokai.domain.storage.StorageManager
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.domain.chapter.interactor.GetChapter
+import Komari.domain.chapter.interactor.InsertChapter
+import Komari.domain.chapter.interactor.UpdateChapter
+import Komari.domain.chapter.models.ChapterUpdate
+import Komari.domain.download.DownloadPreferences
+import Komari.domain.manga.interactor.GetManga
+import Komari.domain.manga.interactor.InsertManga
+import Komari.domain.manga.interactor.UpdateManga
+import Komari.domain.manga.models.MangaUpdate
+import Komari.domain.storage.StorageManager
+import Komari.i18n.MR
+import Komari.util.lang.getString
 
 /**
  * Presenter used by the activity to perform background operations.

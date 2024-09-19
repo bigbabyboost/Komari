@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.preference.PreferenceScreen
 import com.bluelinelabs.conductor.Controller
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.data.database.DatabaseHelper
 import eu.kanade.tachiyomi.data.database.models.Category
@@ -24,7 +24,7 @@ import eu.kanade.tachiyomi.ui.setting.triStateListPreference
 import eu.kanade.tachiyomi.util.lang.addBetaTag
 import eu.kanade.tachiyomi.util.view.withFadeTransaction
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.download.DownloadPreferences
+import Komari.domain.download.DownloadPreferences
 import eu.kanade.tachiyomi.data.preference.PreferenceKeys as Keys
 
 class SettingsDownloadController : SettingsLegacyController() {

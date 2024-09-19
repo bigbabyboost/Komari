@@ -1,4 +1,4 @@
-package yokai.domain.ui
+package Komari.domain.ui
 
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 import eu.kanade.tachiyomi.data.preference.PreferenceKeys

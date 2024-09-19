@@ -1,3 +1,3 @@
-package yokai.core.migration
+package Komari.core.migration
 
 typealias MigrationCompletedListener = () -> Unit

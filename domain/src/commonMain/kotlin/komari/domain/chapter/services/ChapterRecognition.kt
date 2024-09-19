@@ -1,4 +1,4 @@
-package yokai.domain.chapter.services
+package Komari.domain.chapter.services
 
 /**
  * -R> = regex conversion.

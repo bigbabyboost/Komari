@@ -10,9 +10,9 @@ import eu.kanade.tachiyomi.source.Source
 import eu.kanade.tachiyomi.source.online.HttpSource
 import eu.kanade.tachiyomi.ui.reader.model.ReaderChapter
 import eu.kanade.tachiyomi.util.system.withIOContext
-import yokai.core.archive.archiveReader
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.core.archive.archiveReader
+import Komari.i18n.MR
+import Komari.util.lang.getString
 
 /**
  * Loader used to retrieve the [PageLoader] for a given chapter.

@@ -16,7 +16,7 @@ import eu.kanade.tachiyomi.R
 import eu.kanade.tachiyomi.databinding.CommonViewEmptyBinding
 import eu.kanade.tachiyomi.util.view.setText
 import eu.kanade.tachiyomi.util.view.setVectorCompat
-import yokai.util.lang.getString
+import Komari.util.lang.getString
 import android.R as AR
 
 class EmptyView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :

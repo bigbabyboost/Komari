@@ -11,8 +11,8 @@ import eu.kanade.tachiyomi.util.BackupUtil
 import eu.kanade.tachiyomi.util.system.createFileInCacheDir
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.ensureActive
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
@@ -117,7 +117,7 @@ class BackupRestorer(
     internal fun writeErrorLog(): File {
         try {
             if (errors.isNotEmpty()) {
-                val file = context.createFileInCacheDir("yokai_restore.txt")
+                val file = context.createFileInCacheDir("Komari_restore.txt")
                 val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.getDefault())
 
                 file.bufferedWriter().use { out ->

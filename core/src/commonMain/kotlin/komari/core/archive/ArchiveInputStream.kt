@@ -1,3 +1,3 @@
-package yokai.core.archive
+package Komari.core.archive
 
 expect abstract class ArchiveInputStream

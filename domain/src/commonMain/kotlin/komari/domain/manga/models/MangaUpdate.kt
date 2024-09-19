@@ -1,4 +1,4 @@
-package yokai.domain.manga.models
+package Komari.domain.manga.models
 
 import eu.kanade.tachiyomi.source.model.UpdateStrategy
 

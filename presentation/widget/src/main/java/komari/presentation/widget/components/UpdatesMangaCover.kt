@@ -1,4 +1,4 @@
-package yokai.presentation.widget.components
+package Komari.presentation.widget.components
 
 import android.graphics.Bitmap
 import androidx.compose.runtime.Composable
@@ -10,8 +10,8 @@ import androidx.glance.layout.Box
 import androidx.glance.layout.ContentScale
 import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.size
-import yokai.presentation.widget.R
-import yokai.presentation.widget.util.appWidgetInnerRadius
+import Komari.presentation.widget.R
+import Komari.presentation.widget.util.appWidgetInnerRadius
 
 val CoverWidth = 58.dp
 val CoverHeight = 87.dp

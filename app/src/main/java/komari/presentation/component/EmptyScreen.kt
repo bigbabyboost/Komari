@@ -1,4 +1,4 @@
-package yokai.presentation.component
+package Komari.presentation.component
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image

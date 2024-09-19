@@ -4,8 +4,8 @@ import android.view.View
 import androidx.core.text.buildSpannedString
 import androidx.core.text.color
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.databinding.MigrationCardItemBinding
 import eu.kanade.tachiyomi.source.icon

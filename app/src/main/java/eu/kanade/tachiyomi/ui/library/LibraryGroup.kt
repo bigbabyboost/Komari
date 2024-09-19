@@ -2,8 +2,8 @@ package eu.kanade.tachiyomi.ui.library
 
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 
 object LibraryGroup {

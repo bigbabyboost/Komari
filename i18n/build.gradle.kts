@@ -29,11 +29,11 @@ kotlin {
 }
 
 android {
-    namespace = "yokai.i18n"
+    namespace = "Komari.i18n"
 }
 
 multiplatformResources {
-    resourcesPackage.set("yokai.i18n")
+    resourcesPackage.set("Komari.i18n")
 }
 
 tasks {

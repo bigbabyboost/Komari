@@ -37,9 +37,9 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.manga.models.cover
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.domain.manga.models.cover
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import android.R as AR
 
 class LibraryUpdateNotifier(private val context: Context) {
@@ -118,7 +118,7 @@ class LibraryUpdateNotifier(private val context: Context) {
                     ),
                 )
                 setContentIntent(pendingIntent)
-                setSmallIcon(R.drawable.ic_yokai)
+                setSmallIcon(R.drawable.ic_Komari)
                 addAction(
                     R.drawable.ic_file_open_24dp,
                     context.getString(MR.strings.open_log),
@@ -153,7 +153,7 @@ class LibraryUpdateNotifier(private val context: Context) {
                     ),
                 )
                 setContentIntent(NotificationHandler.openUrl(context, HELP_SKIPPED_URL))
-                setSmallIcon(R.drawable.ic_yokai)
+                setSmallIcon(R.drawable.ic_Komari)
                 addAction(
                     R.drawable.ic_file_open_24dp,
                     context.getString(MR.strings.open_log),
@@ -190,7 +190,7 @@ class LibraryUpdateNotifier(private val context: Context) {
                     notifications.add(
                         Pair(
                             context.notification(Notifications.CHANNEL_NEW_CHAPTERS) {
-                                setSmallIcon(R.drawable.ic_yokai)
+                                setSmallIcon(R.drawable.ic_Komari)
                                 try {
                                     val request = ImageRequest.Builder(context).data(manga.cover())
                                         .networkCachePolicy(CachePolicy.DISABLED)
@@ -264,7 +264,7 @@ class LibraryUpdateNotifier(private val context: Context) {
                 notify(
                     Notifications.ID_NEW_CHAPTERS,
                     context.notification(Notifications.CHANNEL_NEW_CHAPTERS) {
-                        setSmallIcon(R.drawable.ic_yokai)
+                        setSmallIcon(R.drawable.ic_Komari)
                         setLargeIcon(notificationBitmap)
                         setContentTitle(context.getString(MR.strings.new_chapters_found))
                         color = ContextCompat.getColor(context, R.color.secondaryTachiyomi)

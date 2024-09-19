@@ -1,4 +1,4 @@
-package yokai.core.migration
+package Komari.core.migration
 
 class MigrationStrategyFactory(
     private val factory: MigrationJobFactory,

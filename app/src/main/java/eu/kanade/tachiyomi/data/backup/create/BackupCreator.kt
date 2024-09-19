@@ -19,10 +19,10 @@ import okio.sink
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.backup.BackupPreferences
-import yokai.domain.storage.StorageManager
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.domain.backup.BackupPreferences
+import Komari.domain.storage.StorageManager
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import java.io.FileOutputStream
 import java.time.Instant
 

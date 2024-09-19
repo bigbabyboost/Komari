@@ -1,4 +1,4 @@
-package yokai.core
+package Komari.core
 
 import co.touchlab.kermit.DefaultFormatter
 import co.touchlab.kermit.LogWriter

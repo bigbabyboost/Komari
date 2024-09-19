@@ -1,4 +1,4 @@
-package yokai.presentation.settings.screen.data
+package Komari.presentation.settings.screen.data
 
 import android.content.Context
 import android.net.Uri
@@ -22,8 +22,8 @@ import eu.kanade.tachiyomi.data.backup.create.BackupOptions
 import eu.kanade.tachiyomi.data.backup.models.Backup
 import eu.kanade.tachiyomi.data.backup.restore.BackupRestoreJob
 import eu.kanade.tachiyomi.util.system.toast
-import yokai.i18n.MR
-import yokai.presentation.component.LabeledCheckbox
+import Komari.i18n.MR
+import Komari.presentation.component.LabeledCheckbox
 import android.R as AR
 
 @Composable

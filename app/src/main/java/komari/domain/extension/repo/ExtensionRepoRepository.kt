@@ -1,7 +1,7 @@
-package yokai.domain.extension.repo
+package Komari.domain.extension.repo
 
 import kotlinx.coroutines.flow.Flow
-import yokai.domain.extension.repo.model.ExtensionRepo
+import Komari.domain.extension.repo.model.ExtensionRepo
 
 interface ExtensionRepoRepository {
     fun subscribeAll(): Flow<List<ExtensionRepo>>

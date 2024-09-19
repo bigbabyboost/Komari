@@ -1,4 +1,4 @@
-package yokai.presentation.core.util.coil
+package Komari.presentation.core.util.coil
 
 import android.view.View
 import android.widget.ImageView
@@ -12,8 +12,8 @@ import coil3.target.ImageViewTarget
 import eu.kanade.tachiyomi.data.coil.CoverViewTarget
 import eu.kanade.tachiyomi.data.coil.LibraryMangaImageTarget
 import eu.kanade.tachiyomi.domain.manga.models.Manga
-import yokai.domain.manga.models.MangaCover
-import yokai.domain.manga.models.cover
+import Komari.domain.manga.models.MangaCover
+import Komari.domain.manga.models.cover
 
 fun ImageView.loadManga(
     manga: Manga,

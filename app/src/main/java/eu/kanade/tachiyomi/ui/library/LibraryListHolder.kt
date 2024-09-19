@@ -9,9 +9,9 @@ import eu.kanade.tachiyomi.databinding.MangaListItemBinding
 import eu.kanade.tachiyomi.util.lang.highlightText
 import eu.kanade.tachiyomi.util.system.dpToPx
 import eu.kanade.tachiyomi.util.view.setCards
-import yokai.i18n.MR
-import yokai.presentation.core.util.coil.loadManga
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.presentation.core.util.coil.loadManga
+import Komari.util.lang.getString
 
 /**
  * Class used to hold the displayed data of a manga in the library, like the cover or the binding.title.

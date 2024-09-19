@@ -1,11 +1,11 @@
-package yokai.presentation.extension.repo
+package Komari.presentation.extension.repo
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import eu.kanade.tachiyomi.ui.base.controller.BaseComposeController
 import eu.kanade.tachiyomi.util.compose.LocalAlertDialog
 import eu.kanade.tachiyomi.util.compose.LocalBackPress
-import yokai.domain.ComposableAlertDialog
+import Komari.domain.ComposableAlertDialog
 
 class ExtensionRepoController() :
     BaseComposeController() {

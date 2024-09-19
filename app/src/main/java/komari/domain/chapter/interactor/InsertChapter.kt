@@ -1,7 +1,7 @@
-package yokai.domain.chapter.interactor
+package Komari.domain.chapter.interactor
 
 import eu.kanade.tachiyomi.data.database.models.Chapter
-import yokai.domain.chapter.ChapterRepository
+import Komari.domain.chapter.ChapterRepository
 
 class InsertChapter(
     private val chapterRepository: ChapterRepository,

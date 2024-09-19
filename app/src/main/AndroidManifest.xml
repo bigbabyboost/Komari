@@ -120,7 +120,7 @@
 
                 <data
                     android:host="myanimelist-auth"
-                    android:scheme="yokai" />
+                    android:scheme="Komari" />
             </intent-filter>
         </activity>
         <activity
@@ -135,7 +135,7 @@
 
                 <data
                     android:host="anilist-auth"
-                    android:scheme="yokai" />
+                    android:scheme="Komari" />
             </intent-filter>
         </activity>
         <activity
@@ -150,7 +150,7 @@
 
                 <data
                     android:host="shikimori-auth"
-                    android:scheme="yokai" />
+                    android:scheme="Komari" />
             </intent-filter>
         </activity>
         <activity
@@ -165,7 +165,7 @@
 
                 <data
                     android:host="bangumi-auth"
-                    android:scheme="yokai" />
+                    android:scheme="Komari" />
             </intent-filter>
         </activity>
 
@@ -246,7 +246,7 @@
         <!-- Loading global exception handler before crashlytics (order: 100) -->
         <provider
             android:name="eu.kanade.tachiyomi.AppProvider"
-            android:authorities="${applicationId}.yokai"
+            android:authorities="${applicationId}.Komari"
             android:exported="false"
             android:initOrder="101" />
 

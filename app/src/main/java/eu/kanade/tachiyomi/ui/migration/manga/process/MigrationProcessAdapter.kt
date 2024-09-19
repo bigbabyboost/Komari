@@ -24,8 +24,8 @@ import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.library.custom.model.CustomMangaInfo.Companion.getMangaInfo
-import yokai.domain.ui.UiPreferences
+import Komari.domain.library.custom.model.CustomMangaInfo.Companion.getMangaInfo
+import Komari.domain.ui.UiPreferences
 
 class MigrationProcessAdapter(
     val controller: MigrationListController,

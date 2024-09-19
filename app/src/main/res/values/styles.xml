@@ -185,13 +185,13 @@
         <item name="android:textColorHint">@color/material_on_background_disabled</item>
     </style>
 
-    <style name="Theme.Widget.Yokai.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="alertDialogStyle">@style/Widget.Yokai.AlertDialog</item>
+    <style name="Theme.Widget.Komari.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/Widget.Komari.AlertDialog</item>
         <item name="elevationOverlayEnabled">true</item>
         <item name="elevationOverlayColor">?colorSecondary</item>
     </style>
 
-    <style name="Widget.Yokai.AlertDialog" parent="MaterialAlertDialog.Material3">
+    <style name="Widget.Komari.AlertDialog" parent="MaterialAlertDialog.Material3">
         <item name="backgroundTint">?attr/colorSurface</item>
     </style>
 

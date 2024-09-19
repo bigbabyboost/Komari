@@ -1,4 +1,4 @@
-package yokai.domain.base.models
+package Komari.domain.base.models
 
 data class Version(
     val type: Type,

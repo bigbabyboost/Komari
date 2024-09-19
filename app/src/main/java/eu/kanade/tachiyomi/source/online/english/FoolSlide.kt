@@ -19,8 +19,8 @@ import okhttp3.FormBody
 import okhttp3.Request
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 
 open class FoolSlide(override val domainName: String, private val urlModifier: String = "") :
     DelegatedHttpSource

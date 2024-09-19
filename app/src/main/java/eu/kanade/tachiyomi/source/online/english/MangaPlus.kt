@@ -15,8 +15,8 @@ import kotlinx.coroutines.withContext
 import okhttp3.CacheControl
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 
 class MangaPlus : DelegatedHttpSource() {
     override val domainName: String = "jumpg-webapi.tokyo-cdn"

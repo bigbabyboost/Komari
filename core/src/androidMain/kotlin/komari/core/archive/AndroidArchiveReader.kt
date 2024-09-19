@@ -1,4 +1,4 @@
-package yokai.core.archive
+package Komari.core.archive
 
 import android.content.Context
 import android.os.ParcelFileDescriptor

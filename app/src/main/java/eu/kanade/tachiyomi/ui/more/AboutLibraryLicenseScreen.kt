@@ -19,11 +19,11 @@ import com.google.android.material.textview.MaterialTextView
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.util.compose.LocalBackPress
 import eu.kanade.tachiyomi.util.compose.currentOrThrow
-import yokai.i18n.MR
-import yokai.presentation.AppBarType
-import yokai.presentation.YokaiScaffold
-import yokai.presentation.component.ToolTipButton
-import yokai.util.Screen
+import Komari.i18n.MR
+import Komari.presentation.AppBarType
+import Komari.presentation.KomariScaffold
+import Komari.presentation.component.ToolTipButton
+import Komari.util.Screen
 
 class AboutLibraryLicenseScreen(
     private val name: String,
@@ -36,7 +36,7 @@ class AboutLibraryLicenseScreen(
         val backPress = LocalBackPress.currentOrThrow
         val uriHandler = LocalUriHandler.current
 
-        YokaiScaffold(
+        KomariScaffold(
             onNavigationIconClicked = {
                 when {
                     navigator.canPop -> navigator.pop()

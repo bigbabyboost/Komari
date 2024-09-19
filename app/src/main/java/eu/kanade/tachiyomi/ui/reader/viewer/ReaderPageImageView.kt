@@ -39,7 +39,7 @@ import eu.kanade.tachiyomi.util.system.GLUtil
 import eu.kanade.tachiyomi.util.system.ImageUtil
 import eu.kanade.tachiyomi.util.system.animatorDurationScale
 import okio.BufferedSource
-import yokai.domain.ui.settings.ReaderPreferences.CutoutBehaviour
+import Komari.domain.ui.settings.ReaderPreferences.CutoutBehaviour
 
 /**
  * A wrapper view for showing page image.

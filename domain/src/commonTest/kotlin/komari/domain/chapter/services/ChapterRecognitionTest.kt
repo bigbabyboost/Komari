@@ -1,4 +1,4 @@
-package yokai.domain.chapter.services
+package Komari.domain.chapter.services
 
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test

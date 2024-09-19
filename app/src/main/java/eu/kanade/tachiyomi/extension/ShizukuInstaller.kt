@@ -9,8 +9,8 @@ import android.os.Build
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import co.touchlab.kermit.Logger
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.extension.util.ExtensionInstaller.Companion.EXTRA_DOWNLOAD_ID
 import eu.kanade.tachiyomi.util.system.getUriSize

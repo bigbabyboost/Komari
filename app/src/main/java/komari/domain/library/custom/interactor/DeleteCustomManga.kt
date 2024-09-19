@@ -1,6 +1,6 @@
-package yokai.domain.library.custom.interactor
+package Komari.domain.library.custom.interactor
 
-import yokai.domain.library.custom.CustomMangaRepository
+import Komari.domain.library.custom.CustomMangaRepository
 
 class DeleteCustomManga(
     private val customMangaRepository: CustomMangaRepository,

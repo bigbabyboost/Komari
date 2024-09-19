@@ -17,8 +17,8 @@ import java.security.MessageDigest
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import uy.kohesive.injekt.injectLazy
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 
 class Kavita(private val context: Context, id: Long) : TrackService(id), EnhancedTrackService {
 

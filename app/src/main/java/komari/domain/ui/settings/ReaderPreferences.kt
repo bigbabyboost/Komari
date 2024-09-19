@@ -1,11 +1,11 @@
-package yokai.domain.ui.settings
+package Komari.domain.ui.settings
 
 import dev.icerock.moko.resources.StringResource
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 import eu.kanade.tachiyomi.core.preference.getEnum
 import eu.kanade.tachiyomi.data.preference.PreferenceKeys
 import eu.kanade.tachiyomi.ui.reader.viewer.pager.PagerConfig
-import yokai.i18n.MR
+import Komari.i18n.MR
 
 class ReaderPreferences(private val preferenceStore: PreferenceStore) {
     fun cutoutShort() = preferenceStore.getBoolean("cutout_short", true)

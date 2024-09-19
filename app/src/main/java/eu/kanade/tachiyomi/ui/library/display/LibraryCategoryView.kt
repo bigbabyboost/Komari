@@ -3,8 +3,8 @@ package eu.kanade.tachiyomi.ui.library.display
 import android.content.Context
 import android.util.AttributeSet
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import Komari.i18n.MR
+import Komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.databinding.LibraryCategoryLayoutBinding
 import eu.kanade.tachiyomi.util.bindToPreference

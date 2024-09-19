@@ -1,10 +1,10 @@
-package yokai.core.migration.migrations
+package Komari.core.migration.migrations
 
 import android.app.Application
 import eu.kanade.tachiyomi.BuildConfig
 import eu.kanade.tachiyomi.data.updater.AppUpdateJob
-import yokai.core.migration.Migration
-import yokai.core.migration.MigrationContext
+import Komari.core.migration.Migration
+import Komari.core.migration.MigrationContext
 
 class SetupAppUpdateMigration : Migration {
     override val version: Float = Migration.ALWAYS

@@ -1,6 +1,6 @@
-package yokai.domain.category.interactor
+package Komari.domain.category.interactor
 
-import yokai.domain.category.CategoryRepository
+import Komari.domain.category.CategoryRepository
 
 class GetCategories(
     private val categoryRepository: CategoryRepository,

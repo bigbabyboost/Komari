@@ -1,4 +1,4 @@
-package yokai.domain
+package Komari.domain
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue

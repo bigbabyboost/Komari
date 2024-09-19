@@ -1,4 +1,4 @@
-package yokai.domain.storage
+package Komari.domain.storage
 
 import android.content.Context
 import androidx.core.net.toUri

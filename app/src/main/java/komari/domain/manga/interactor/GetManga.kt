@@ -1,6 +1,6 @@
-package yokai.domain.manga.interactor
+package Komari.domain.manga.interactor
 
-import yokai.domain.manga.MangaRepository
+import Komari.domain.manga.MangaRepository
 
 class GetManga (
     private val mangaRepository: MangaRepository,

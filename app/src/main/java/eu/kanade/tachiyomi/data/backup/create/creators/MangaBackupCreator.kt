@@ -10,7 +10,7 @@ import eu.kanade.tachiyomi.data.library.CustomMangaManager
 import eu.kanade.tachiyomi.domain.manga.models.Manga
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.domain.chapter.interactor.GetChapter
+import Komari.domain.chapter.interactor.GetChapter
 
 class MangaBackupCreator(
     private val db: DatabaseHelper = Injekt.get(),
