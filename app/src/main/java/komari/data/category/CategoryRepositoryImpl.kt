@@ -1,9 +1,9 @@
-package yokai.data.category
+package komari.data.category
 
 import eu.kanade.tachiyomi.data.database.models.Category
 import kotlinx.coroutines.flow.Flow
-import yokai.data.DatabaseHandler
-import yokai.domain.category.CategoryRepository
+import komari.data.DatabaseHandler
+import komari.domain.category.CategoryRepository
 
 class CategoryRepositoryImpl(private val handler: DatabaseHandler) : CategoryRepository {
     override suspend fun getAll(): List<Category> =

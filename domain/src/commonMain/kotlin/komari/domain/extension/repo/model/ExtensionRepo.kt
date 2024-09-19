@@ -1,4 +1,4 @@
-package yokai.domain.extension.repo.model
+package komari.domain.extension.repo.model
 
 data class ExtensionRepo(
     val baseUrl: String,

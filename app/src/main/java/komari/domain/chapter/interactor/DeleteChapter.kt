@@ -1,7 +1,7 @@
-package yokai.domain.chapter.interactor
+package komari.domain.chapter.interactor
 
 import eu.kanade.tachiyomi.data.database.models.Chapter
-import yokai.domain.chapter.ChapterRepository
+import komari.domain.chapter.ChapterRepository
 
 class DeleteChapter(
     private val chapterRepository: ChapterRepository,

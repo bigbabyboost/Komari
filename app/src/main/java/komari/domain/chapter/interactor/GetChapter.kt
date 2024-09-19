@@ -1,7 +1,7 @@
-package yokai.domain.chapter.interactor
+package komari.domain.chapter.interactor
 
 import eu.kanade.tachiyomi.domain.manga.models.Manga
-import yokai.domain.chapter.ChapterRepository
+import komari.domain.chapter.ChapterRepository
 
 class GetChapter(
     private val chapterRepository: ChapterRepository,

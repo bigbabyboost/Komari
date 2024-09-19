@@ -69,11 +69,11 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.parcelize.Parcelize
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.base.BasePreferences
-import yokai.domain.base.BasePreferences.ExtensionInstaller
-import yokai.i18n.MR
-import yokai.presentation.extension.repo.ExtensionRepoController
-import yokai.util.lang.getString
+import komari.domain.base.BasePreferences
+import komari.domain.base.BasePreferences.ExtensionInstaller
+import komari.i18n.MR
+import komari.presentation.extension.repo.ExtensionRepoController
+import komari.util.lang.getString
 import java.util.*
 import kotlin.math.max
 

@@ -1,11 +1,11 @@
-package yokai.presentation.settings
+package komari.presentation.settings
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import dev.icerock.moko.resources.StringResource
 import dev.icerock.moko.resources.compose.stringResource
-import yokai.presentation.component.preference.Preference
+import komari.presentation.component.preference.Preference
 
 interface ComposableSettings {
     @Composable

@@ -28,8 +28,8 @@ import eu.kanade.tachiyomi.util.system.roundToTwoDecimal
 import eu.kanade.tachiyomi.util.view.compatToolTipText
 import eu.kanade.tachiyomi.util.view.scrollViewWith
 import eu.kanade.tachiyomi.util.view.withFadeTransaction
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import kotlin.math.roundToInt
 import android.R as AR
 

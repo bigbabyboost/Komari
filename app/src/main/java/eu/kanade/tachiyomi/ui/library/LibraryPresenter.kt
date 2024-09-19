@@ -65,17 +65,17 @@ import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.category.interactor.GetCategories
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.domain.chapter.interactor.UpdateChapter
-import yokai.domain.chapter.models.ChapterUpdate
-import yokai.domain.manga.interactor.GetLibraryManga
-import yokai.domain.manga.interactor.GetManga
-import yokai.domain.manga.interactor.UpdateManga
-import yokai.domain.manga.models.MangaUpdate
-import yokai.i18n.MR
-import yokai.util.isLewd
-import yokai.util.lang.getString
+import komari.domain.category.interactor.GetCategories
+import komari.domain.chapter.interactor.GetChapter
+import komari.domain.chapter.interactor.UpdateChapter
+import komari.domain.chapter.models.ChapterUpdate
+import komari.domain.manga.interactor.GetLibraryManga
+import komari.domain.manga.interactor.GetManga
+import komari.domain.manga.interactor.UpdateManga
+import komari.domain.manga.models.MangaUpdate
+import komari.i18n.MR
+import komari.util.isLewd
+import komari.util.lang.getString
 
 /**
  * Presenter of [LibraryController].

@@ -1,4 +1,4 @@
-package yokai.presentation.settings.screen.data
+package komari.presentation.settings.screen.data
 
 import android.content.Intent
 import android.net.Uri

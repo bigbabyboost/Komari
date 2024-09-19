@@ -1,9 +1,9 @@
-package yokai.core.migration.migrations
+package komari.core.migration.migrations
 
 import android.app.Application
 import eu.kanade.tachiyomi.extension.ExtensionUpdateJob
-import yokai.core.migration.Migration
-import yokai.core.migration.MigrationContext
+import komari.core.migration.Migration
+import komari.core.migration.MigrationContext
 
 class SetupExtensionUpdateMigration : Migration {
     override val version: Float = Migration.ALWAYS

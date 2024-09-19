@@ -1,4 +1,4 @@
-package yokai.presentation.widget.util
+package komari.presentation.widget.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.DpSize
@@ -6,8 +6,8 @@ import androidx.glance.GlanceModifier
 import androidx.glance.LocalContext
 import androidx.glance.appwidget.cornerRadius
 import dev.icerock.moko.resources.StringResource
-import yokai.presentation.widget.R
-import yokai.util.lang.getString
+import komari.presentation.widget.R
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 
 fun GlanceModifier.appWidgetBackgroundRadius(): GlanceModifier {

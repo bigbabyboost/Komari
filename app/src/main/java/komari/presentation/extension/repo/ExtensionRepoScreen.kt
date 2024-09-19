@@ -1,4 +1,4 @@
-package yokai.presentation.extension.repo
+package komari.presentation.extension.repo
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.padding
@@ -31,15 +31,15 @@ import eu.kanade.tachiyomi.util.compose.LocalBackPress
 import eu.kanade.tachiyomi.util.compose.currentOrThrow
 import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.coroutines.flow.collectLatest
-import yokai.domain.ComposableAlertDialog
-import yokai.domain.extension.repo.model.ExtensionRepo
-import yokai.i18n.MR
-import yokai.presentation.AppBarType
-import yokai.presentation.YokaiScaffold
-import yokai.presentation.component.EmptyScreen
-import yokai.presentation.component.ToolTipButton
-import yokai.presentation.extension.repo.component.ExtensionRepoInput
-import yokai.presentation.extension.repo.component.ExtensionRepoItem
+import komari.domain.ComposableAlertDialog
+import komari.domain.extension.repo.model.ExtensionRepo
+import komari.i18n.MR
+import komari.presentation.AppBarType
+import komari.presentation.KomariScaffold
+import komari.presentation.component.EmptyScreen
+import komari.presentation.component.ToolTipButton
+import komari.presentation.extension.repo.component.ExtensionRepoInput
+import komari.presentation.extension.repo.component.ExtensionRepoItem
 import android.R as AR
 
 @Composable
@@ -55,7 +55,7 @@ fun ExtensionRepoScreen(
     val listState = rememberLazyListState()
     val alertDialog = LocalAlertDialog.currentOrThrow
 
-    YokaiScaffold(
+    KomariScaffold(
         onNavigationIconClicked = onBackPress,
         title = title,
         appBarType = AppBarType.SMALL,
@@ -74,7 +74,7 @@ fun ExtensionRepoScreen(
             )
         },
     ) { innerPadding ->
-        if (repoState is ExtensionRepoState.Loading) return@YokaiScaffold
+        if (repoState is ExtensionRepoState.Loading) return@KomariScaffold
 
         val repos = (repoState as ExtensionRepoState.Success).repos
 

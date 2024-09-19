@@ -1,4 +1,4 @@
-package yokai.presentation.onboarding.steps
+package komari.presentation.onboarding.steps
 
 import android.content.ActivityNotFoundException
 import androidx.compose.foundation.layout.Arrangement
@@ -19,16 +19,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.coroutines.flow.collectLatest
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.storage.StoragePreferences
-import yokai.presentation.component.preference.storageLocationText
-import yokai.presentation.settings.screen.data.storageLocationPicker
-import yokai.presentation.theme.Size
+import komari.domain.storage.StoragePreferences
+import komari.presentation.component.preference.storageLocationText
+import komari.presentation.settings.screen.data.storageLocationPicker
+import komari.presentation.theme.Size
 
 internal class StorageStep : OnboardingStep {
 

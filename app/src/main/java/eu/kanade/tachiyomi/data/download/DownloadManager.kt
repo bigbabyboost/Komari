@@ -17,9 +17,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.download.DownloadPreferences
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.download.DownloadPreferences
+import komari.i18n.MR
+import komari.util.lang.getString
 
 /**
  * This class is used to manage chapter downloads in the application. It must be instantiated once

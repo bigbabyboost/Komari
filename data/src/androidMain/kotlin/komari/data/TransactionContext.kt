@@ -1,4 +1,4 @@
-package yokai.data
+package komari.data
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job

@@ -14,10 +14,10 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.download.DownloadPreferences
-import yokai.domain.storage.StorageManager
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.download.DownloadPreferences
+import komari.domain.storage.StorageManager
+import komari.i18n.MR
+import komari.util.lang.getString
 
 /**
  * This class is used to provide the directories where the downloads should be saved.

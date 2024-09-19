@@ -1,4 +1,4 @@
-package yokai.presentation.settings
+package komari.presentation.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -22,12 +22,12 @@ import eu.kanade.tachiyomi.util.compose.LocalBackPress
 import eu.kanade.tachiyomi.util.compose.currentOrThrow
 import kotlinx.coroutines.delay
 import uy.kohesive.injekt.injectLazy
-import yokai.presentation.AppBarType
-import yokai.presentation.YokaiScaffold
-import yokai.presentation.component.Gap
-import yokai.presentation.component.preference.Preference
-import yokai.presentation.component.preference.PreferenceItem
-import yokai.presentation.component.preference.widget.PreferenceGroupHeader
+import komari.presentation.AppBarType
+import komari.presentation.KomariScaffold
+import komari.presentation.component.Gap
+import komari.presentation.component.preference.Preference
+import komari.presentation.component.preference.PreferenceItem
+import komari.presentation.component.preference.widget.PreferenceGroupHeader
 import kotlin.time.Duration.Companion.seconds
 
 @Composable
@@ -43,7 +43,7 @@ fun SettingsScaffold(
     val onBackPress = LocalBackPress.currentOrThrow
     val alertDialog = LocalAlertDialog.currentOrThrow
 
-    YokaiScaffold(
+    KomariScaffold(
         onNavigationIconClicked = onBackPress,
         title = title,
         appBarType = appBarType ?: if (useLargeAppBar) AppBarType.LARGE else AppBarType.SMALL,

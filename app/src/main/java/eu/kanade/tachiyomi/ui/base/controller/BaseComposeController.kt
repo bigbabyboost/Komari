@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
-import yokai.presentation.theme.YokaiTheme
+import komari.presentation.theme.KomariTheme
 
 abstract class BaseComposeController(bundle: Bundle? = null) :
     BaseController(bundle) {
@@ -25,7 +25,7 @@ abstract class BaseComposeController(bundle: Bundle? = null) :
             )
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
-                YokaiTheme {
+                KomariTheme {
                     ScreenContent()
                 }
             }

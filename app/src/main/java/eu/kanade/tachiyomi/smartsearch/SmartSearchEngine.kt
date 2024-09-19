@@ -11,7 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.supervisorScope
 import uy.kohesive.injekt.injectLazy
-import yokai.util.normalizedLevenshteinSimilarity
+import komari.util.normalizedLevenshteinSimilarity
 import kotlin.coroutines.CoroutineContext
 
 class SmartSearchEngine(

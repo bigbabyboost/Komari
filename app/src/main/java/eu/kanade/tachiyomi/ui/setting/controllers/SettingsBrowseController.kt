@@ -8,8 +8,8 @@ import androidx.preference.PreferenceScreen
 import androidx.preference.SwitchPreferenceCompat
 import eu.kanade.tachiyomi.BuildConfig
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.data.preference.PreferenceKeys
@@ -37,8 +37,8 @@ import eu.kanade.tachiyomi.util.view.setAction
 import eu.kanade.tachiyomi.util.view.snack
 import eu.kanade.tachiyomi.util.view.withFadeTransaction
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.base.BasePreferences.ExtensionInstaller
-import yokai.presentation.extension.repo.ExtensionRepoController
+import komari.domain.base.BasePreferences.ExtensionInstaller
+import komari.presentation.extension.repo.ExtensionRepoController
 
 class SettingsBrowseController : SettingsLegacyController() {
 

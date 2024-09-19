@@ -1,4 +1,4 @@
-package yokai.presentation.extension.repo.component
+package komari.presentation.extension.repo.component
 
 import android.content.res.Configuration
 import androidx.compose.foundation.basicMarquee
@@ -31,9 +31,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import eu.kanade.tachiyomi.util.compose.textHint
-import yokai.domain.extension.repo.model.ExtensionRepo
-import yokai.presentation.component.Gap
-import yokai.presentation.theme.Size
+import komari.domain.extension.repo.model.ExtensionRepo
+import komari.presentation.component.Gap
+import komari.presentation.theme.Size
 
 // TODO: Redesign
 // - Edit
@@ -155,7 +155,7 @@ fun ExtensionRepoInput(
 @Preview(name = "Light", uiMode = Configuration.UI_MODE_NIGHT_NO, showBackground = true)
 @Composable
 fun ExtensionRepoItemPreview() {
-    val input = "https://raw.githubusercontent.com/null2264/totally-real-extensions/repo/index.min.json"
+    val input = "https://raw.githubusercontent.com/bigbabyboost/totally-real-extensions/repo/index.min.json"
     Surface {
         Column {
             ExtensionRepoItem(extensionRepo = ExtensionRepo("", "", "", "", ""))

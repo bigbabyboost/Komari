@@ -1,4 +1,4 @@
-package yokai.domain.extension.repo.exception
+package komari.domain.extension.repo.exception
 
 import java.io.IOException
 

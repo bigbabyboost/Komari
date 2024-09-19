@@ -1,4 +1,4 @@
-package yokai.presentation.extension
+package komari.presentation.extension
 
 import android.os.Bundle
 import androidx.compose.material3.Text

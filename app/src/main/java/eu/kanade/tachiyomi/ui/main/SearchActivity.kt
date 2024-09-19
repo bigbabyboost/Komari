@@ -29,9 +29,9 @@ import kotlinx.coroutines.runBlocking
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.presentation.core.Constants
-import yokai.presentation.core.util.IntentCommon
+import komari.domain.chapter.interactor.GetChapter
+import komari.presentation.core.Constants
+import komari.presentation.core.util.IntentCommon
 
 class SearchActivity : MainActivity() {
     private val getChapter: GetChapter by injectLazy()

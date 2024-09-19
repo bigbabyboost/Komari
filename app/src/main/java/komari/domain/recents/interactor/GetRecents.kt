@@ -1,10 +1,10 @@
-package yokai.domain.recents.interactor
+package komari.domain.recents.interactor
 
 import eu.kanade.tachiyomi.data.database.models.MangaChapter
 import eu.kanade.tachiyomi.data.database.models.MangaChapterHistory
-import yokai.domain.chapter.ChapterRepository
-import yokai.domain.history.HistoryRepository
-import yokai.util.limitAndOffset
+import komari.domain.chapter.ChapterRepository
+import komari.domain.history.HistoryRepository
+import komari.util.limitAndOffset
 
 class GetRecents(
     private val chapterRepository: ChapterRepository,

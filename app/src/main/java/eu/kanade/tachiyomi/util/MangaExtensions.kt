@@ -44,9 +44,9 @@ import java.util.Date
 import java.util.Locale
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.chapter.interactor.GetChapter
+import komari.i18n.MR
+import komari.util.lang.getString
 import android.R as AR
 
 fun Manga.isLocal() = source == LocalSource.ID

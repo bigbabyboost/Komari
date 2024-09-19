@@ -47,7 +47,7 @@ kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
-koin-injekt = { module = "com.github.null2264:injekt-koin", version = "7f944dd775" }
+koin-injekt = { module = "com.github.bigbabyboost:injekt-koin", version = "7f944dd775" }
 
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "5.9.1" }
 
@@ -89,7 +89,7 @@ sqldelight-android-driver = { module = "app.cash.sqldelight:android-driver", ver
 sqldelight-android-paging = { module = "app.cash.sqldelight:androidx-paging3-extensions", version.ref = "sqldelight" }
 sqldelight-dialects-sql = { module = "app.cash.sqldelight:sqlite-3-38-dialect", version.ref = "sqldelight" }
 
-subsamplingscaleimageview = { module = "com.github.null2264:subsampling-scale-image-view", version = "338caedb5f" }
+subsamplingscaleimageview = { module = "com.github.bigbabyboost:subsampling-scale-image-view", version = "338caedb5f" }
 shizuku-api = { module = "dev.rikka.shizuku:api", version.ref = "shizuku" }
 shizuku-provider = { module = "dev.rikka.shizuku:provider", version.ref = "shizuku" }
 taptargetview = { module = "com.getkeepsafe.taptargetview:taptargetview", version = "1.13.3" }

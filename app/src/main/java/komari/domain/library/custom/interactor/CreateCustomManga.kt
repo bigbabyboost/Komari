@@ -1,8 +1,8 @@
-package yokai.domain.library.custom.interactor
+package komari.domain.library.custom.interactor
 
-import yokai.domain.library.custom.CustomMangaRepository
-import yokai.domain.library.custom.exception.SaveCustomMangaException
-import yokai.domain.library.custom.model.CustomMangaInfo
+import komari.domain.library.custom.CustomMangaRepository
+import komari.domain.library.custom.exception.SaveCustomMangaException
+import komari.domain.library.custom.model.CustomMangaInfo
 
 class CreateCustomManga(
     private val customMangaRepository: CustomMangaRepository,

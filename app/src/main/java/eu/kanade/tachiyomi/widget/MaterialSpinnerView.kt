@@ -17,8 +17,8 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.view.forEach
 import androidx.core.view.get
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import eu.kanade.tachiyomi.core.preference.Preference
 import eu.kanade.tachiyomi.databinding.MaterialSpinnerViewBinding

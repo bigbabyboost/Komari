@@ -1,4 +1,4 @@
-package yokai.presentation.onboarding
+package komari.presentation.onboarding
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedContent
@@ -19,15 +19,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
 import soup.compose.material.motion.animation.materialSharedAxisX
 import soup.compose.material.motion.animation.rememberSlideDistance
-import yokai.presentation.onboarding.steps.PermissionStep
-import yokai.presentation.onboarding.steps.StorageStep
-import yokai.presentation.onboarding.steps.ThemeStep
-import yokai.presentation.theme.Size
+import komari.presentation.onboarding.steps.PermissionStep
+import komari.presentation.onboarding.steps.StorageStep
+import komari.presentation.onboarding.steps.ThemeStep
+import komari.presentation.theme.Size
 
 @Composable
 fun OnboardingScreen(

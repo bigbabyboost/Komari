@@ -23,13 +23,13 @@ kotlin {
 }
 
 android {
-    namespace = "yokai.data"
+    namespace = "komari.data"
 }
 
 sqldelight {
     databases {
         create("Database") {
-            packageName.set("yokai.data")
+            packageName.set("komari.data")
             dialect(libs.sqldelight.dialects.sql)
             schemaOutputDirectory.set(project.file("./src/commonMain/sqldelight"))
         }

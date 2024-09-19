@@ -85,17 +85,17 @@ import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.chapter.interactor.GetAvailableScanlators
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.domain.chapter.interactor.UpdateChapter
-import yokai.domain.library.custom.model.CustomMangaInfo
-import yokai.domain.manga.interactor.GetManga
-import yokai.domain.manga.interactor.UpdateManga
-import yokai.domain.manga.models.MangaUpdate
-import yokai.domain.manga.models.cover
-import yokai.domain.storage.StorageManager
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.chapter.interactor.GetAvailableScanlators
+import komari.domain.chapter.interactor.GetChapter
+import komari.domain.chapter.interactor.UpdateChapter
+import komari.domain.library.custom.model.CustomMangaInfo
+import komari.domain.manga.interactor.GetManga
+import komari.domain.manga.interactor.UpdateManga
+import komari.domain.manga.models.MangaUpdate
+import komari.domain.manga.models.cover
+import komari.domain.storage.StorageManager
+import komari.i18n.MR
+import komari.util.lang.getString
 
 class MangaDetailsPresenter(
     val mangaId: Long,

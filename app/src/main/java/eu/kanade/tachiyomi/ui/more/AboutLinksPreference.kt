@@ -40,7 +40,7 @@ class AboutLinksPreference @JvmOverloads constructor(context: Context, attrs: At
         }
         holder.findViewById(R.id.btn_github).apply {
             compatToolTipText = (contentDescription.toString())
-            setOnClickListener { context.openInBrowser("https://github.com/null2264/yokai") }
+            setOnClickListener { context.openInBrowser("https://github.com/bigbabyboost/komari") }
         }
     }
 }

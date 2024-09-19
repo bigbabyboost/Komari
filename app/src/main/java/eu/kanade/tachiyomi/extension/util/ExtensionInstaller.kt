@@ -46,7 +46,7 @@ import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.base.BasePreferences
+import komari.domain.base.BasePreferences
 import java.io.File
 
 /**

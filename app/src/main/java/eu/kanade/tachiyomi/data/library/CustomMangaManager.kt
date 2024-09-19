@@ -16,16 +16,16 @@ import nl.adaptivity.xmlutil.serialization.XML
 import nl.adaptivity.xmlutil.serialization.XmlSerialName
 import nl.adaptivity.xmlutil.serialization.XmlValue
 import uy.kohesive.injekt.injectLazy
-import yokai.core.metadata.COMIC_INFO_EDITS_FILE
-import yokai.core.metadata.ComicInfo
-import yokai.core.metadata.ComicInfoPublishingStatus
-import yokai.core.metadata.copyFromComicInfo
-import yokai.domain.library.custom.interactor.CreateCustomManga
-import yokai.domain.library.custom.interactor.DeleteCustomManga
-import yokai.domain.library.custom.interactor.GetCustomManga
-import yokai.domain.library.custom.interactor.RelinkCustomManga
-import yokai.domain.library.custom.model.CustomMangaInfo
-import yokai.domain.library.custom.model.CustomMangaInfo.Companion.getMangaInfo
+import komari.core.metadata.COMIC_INFO_EDITS_FILE
+import komari.core.metadata.ComicInfo
+import komari.core.metadata.ComicInfoPublishingStatus
+import komari.core.metadata.copyFromComicInfo
+import komari.domain.library.custom.interactor.CreateCustomManga
+import komari.domain.library.custom.interactor.DeleteCustomManga
+import komari.domain.library.custom.interactor.GetCustomManga
+import komari.domain.library.custom.interactor.RelinkCustomManga
+import komari.domain.library.custom.model.CustomMangaInfo
+import komari.domain.library.custom.model.CustomMangaInfo.Companion.getMangaInfo
 import java.nio.charset.StandardCharsets
 
 class CustomMangaManager(val context: Context) {
@@ -200,13 +200,13 @@ class CustomMangaManager(val context: Context) {
     }
 
     @Serializable
-    @XmlSerialName("ComicListYokai", "http://www.w3.org/2001/XMLSchema", "yk")
+    @XmlSerialName("ComicListKomari", "http://www.w3.org/2001/XMLSchema", "yk")
     data class ComicList(
-        val comics: List<ComicInfoYokai>? = null,
+        val comics: List<ComicInfoKomari>? = null,
     ) {
         @Serializable
-        @XmlSerialName("ComicInfoYokai", "http://www.w3.org/2001/XMLSchema", "yk")
-        data class ComicInfoYokai(
+        @XmlSerialName("ComicInfoKomari", "http://www.w3.org/2001/XMLSchema", "yk")
+        data class ComicInfoKomari(
             @XmlValue(true) val value: ComicInfo,
             var id: Long? = null,
         ) {
@@ -219,7 +219,7 @@ class CustomMangaManager(val context: Context) {
                     description: String? = null,
                     genre: Array<String>? = null,
                     status: Int? = null,
-                ): ComicInfoYokai {
+                ): ComicInfoKomari {
                     return create(
                         id = id,
                         title = title,
@@ -239,8 +239,8 @@ class CustomMangaManager(val context: Context) {
                     description: String? = null,
                     genre: String? = null,
                     status: Int? = null,
-                ): ComicInfoYokai {
-                    return ComicInfoYokai(
+                ): ComicInfoKomari {
+                    return ComicInfoKomari(
                         id = id,
                         value = ComicInfo(
                             title = null,

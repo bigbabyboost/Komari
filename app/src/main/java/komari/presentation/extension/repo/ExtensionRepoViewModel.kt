@@ -1,4 +1,4 @@
-package yokai.presentation.extension.repo
+package komari.presentation.extension.repo
 
 import androidx.compose.runtime.Immutable
 import androidx.lifecycle.ViewModel
@@ -14,13 +14,13 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.update
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.extension.repo.interactor.CreateExtensionRepo
-import yokai.domain.extension.repo.interactor.DeleteExtensionRepo
-import yokai.domain.extension.repo.interactor.GetExtensionRepo
-import yokai.domain.extension.repo.interactor.ReplaceExtensionRepo
-import yokai.domain.extension.repo.interactor.UpdateExtensionRepo
-import yokai.domain.extension.repo.model.ExtensionRepo
-import yokai.i18n.MR
+import komari.domain.extension.repo.interactor.CreateExtensionRepo
+import komari.domain.extension.repo.interactor.DeleteExtensionRepo
+import komari.domain.extension.repo.interactor.GetExtensionRepo
+import komari.domain.extension.repo.interactor.ReplaceExtensionRepo
+import komari.domain.extension.repo.interactor.UpdateExtensionRepo
+import komari.domain.extension.repo.model.ExtensionRepo
+import komari.i18n.MR
 
 class ExtensionRepoViewModel :
     ViewModel() {

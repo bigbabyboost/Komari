@@ -1,4 +1,4 @@
-package yokai.presentation.onboarding.steps
+package komari.presentation.onboarding.steps
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -34,11 +34,11 @@ import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import eu.kanade.tachiyomi.R
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.i18n.MR
+import komari.util.lang.getString
 import dev.icerock.moko.resources.compose.stringResource
-import yokai.presentation.component.Gap
-import yokai.presentation.theme.Size
+import komari.presentation.component.Gap
+import komari.presentation.theme.Size
 
 internal class PermissionStep : OnboardingStep {
 

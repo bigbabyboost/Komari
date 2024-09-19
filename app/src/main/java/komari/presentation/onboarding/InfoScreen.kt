@@ -1,4 +1,4 @@
-package yokai.presentation.onboarding
+package komari.presentation.onboarding
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -31,8 +31,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.zIndex
-import yokai.presentation.core.util.secondaryItemAlpha
-import yokai.presentation.theme.Size
+import komari.presentation.core.util.secondaryItemAlpha
+import komari.presentation.theme.Size
 
 @Composable
 fun InfoScreen(

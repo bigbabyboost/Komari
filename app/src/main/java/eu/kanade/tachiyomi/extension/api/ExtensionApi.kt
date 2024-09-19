@@ -18,9 +18,9 @@ import kotlinx.serialization.json.Json
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.extension.repo.interactor.GetExtensionRepo
-import yokai.domain.extension.repo.interactor.UpdateExtensionRepo
-import yokai.domain.extension.repo.model.ExtensionRepo
+import komari.domain.extension.repo.interactor.GetExtensionRepo
+import komari.domain.extension.repo.interactor.UpdateExtensionRepo
+import komari.domain.extension.repo.model.ExtensionRepo
 
 internal class ExtensionApi {
 

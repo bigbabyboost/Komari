@@ -1,7 +1,7 @@
 <div align="center">
 
-<a href="https://github.com/null2264/yokai">
-    <img src="./.github/readme-images/app-icon.webp" alt="Yokai logo" height="200px" width="200px" />
+<a href="https://github.com/bigbabyboost/komari">
+    <img src="./.github/readme-images/app-icon.webp" alt="Komari logo" height="200px" width="200px" />
 </a>
 
 # Yōkai
@@ -12,17 +12,17 @@
 
 A free and open source manga reader
 
-[![CI](https://github.com/null2264/yokai/actions/workflows/build_push.yml/badge.svg)](https://github.com/null2264/yokai/actions/workflows/build_push.yml)
+[![CI](https://github.com/bigbabyboost/komari/actions/workflows/build_push.yml/badge.svg)](https://github.com/bigbabyboost/komari/actions/workflows/build_push.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](/LICENSE)
 [![Discord: Mihon](https://img.shields.io/discord/1195734228319617024.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/mihon)
-[![Mirror: GitLab](https://img.shields.io/badge/mirror-GitLab-orange.svg)](https://gitlab.com/null2264/yokai)
+[![Mirror: GitLab](https://img.shields.io/badge/mirror-GitLab-orange.svg)](https://gitlab.com/bigbabyboost/komari)
 
-<img src="./.github/readme-images/screens.gif" alt="Yokai screenshots" />
+<img src="./.github/readme-images/screens.gif" alt="Komari screenshots" />
 
 ## Download
 
-[![Yokai Stable](https://img.shields.io/github/v/release/null2264/yokai?maxAge=3600&label=Stable&labelColor=06599d&color=043b69&filter=v*)](https://github.com/null2264/yokai/releases)
-[![Yokai Nightly](https://img.shields.io/github/v/release/null2264/yokai-nightly?maxAge=3600&label=Nightly&labelColor=2c2c47&color=1c1c39&filter=r*)](https://github.com/null2264/yokai-nightly/releases)
+[![Komari Stable](https://img.shields.io/github/v/release/bigbabyboost/komari?maxAge=3600&label=Stable&labelColor=06599d&color=043b69&filter=v*)](https://github.com/bigbabyboost/komari/releases)
+[![Komari Nightly](https://img.shields.io/github/v/release/bigbabyboost/komari-nightly?maxAge=3600&label=Nightly&labelColor=2c2c47&color=1c1c39&filter=r*)](https://github.com/bigbabyboost/komari-nightly/releases)
 
 *Requires Android 6.0 or higher.*
 
@@ -102,7 +102,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 <details><summary>Issues</summary>
 
-**Before reporting a new issue, take a look at the [FAQ](https://mihon.app/docs/faq/general), the [changelog](https://github.com/null2264/yokai/releases) and the already opened [issues](https://github.com/null2264/yokai/issues).**
+**Before reporting a new issue, take a look at the [FAQ](https://mihon.app/docs/faq/general), the [changelog](https://github.com/bigbabyboost/komari/releases) and the already opened [issues](https://github.com/bigbabyboost/komari/issues).**
 
 </details>
 
@@ -135,8 +135,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Thank you to all the people who have contributed!
 
-<a href="https://github.com/null2264/yokai/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=null2264/yokai" alt="Yokai app contributors" title="Yokai app contributors" width="600"/>
+<a href="https://github.com/bigbabyboost/komari/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=bigbabyboost/komari" alt="Komari app contributors" title="Komari app contributors" width="600"/>
 </a>
 
 ### Disclaimer
@@ -147,7 +147,7 @@ The developer(s) of this application does not have any affiliation with the cont
 
 <pre>
 Copyright © 2015 Javier Tomás
-Copyright © 2024 null2264
+Copyright © 2024 bigbabyboost
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -42,7 +42,7 @@ import java.util.Date
 import kotlin.math.min
 import kotlinx.coroutines.MainScope
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.manga.models.cover
+import komari.domain.manga.models.cover
 
 class UpdatesGridGlanceWidget : GlanceAppWidget() {
     private val app: Application by injectLazy()

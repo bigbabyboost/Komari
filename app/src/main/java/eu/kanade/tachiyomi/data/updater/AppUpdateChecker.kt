@@ -14,7 +14,7 @@ import eu.kanade.tachiyomi.util.system.withIOContext
 import kotlinx.serialization.json.Json
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.domain.base.models.Version
+import komari.domain.base.models.Version
 import java.util.*
 import java.util.concurrent.*
 
@@ -106,9 +106,9 @@ val RELEASE_TAG: String by lazy {
 
 val GITHUB_REPO: String by lazy {
     if (BuildConfig.NIGHTLY) {
-        "null2264/yokai-nightly"
+        "bigbabyboost/komari-nightly"
     } else {
-        "null2264/yokai"
+        "bigbabyboost/komari"
     }
 }
 

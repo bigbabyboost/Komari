@@ -1,4 +1,4 @@
-package yokai.domain.library.custom.exception
+package komari.domain.library.custom.exception
 
 import java.io.IOException
 

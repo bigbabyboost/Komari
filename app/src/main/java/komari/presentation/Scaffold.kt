@@ -1,4 +1,4 @@
-package yokai.presentation
+package komari.presentation
 
 import android.app.Activity
 import android.os.Build
@@ -26,11 +26,11 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowInsetsControllerCompat
 import dev.icerock.moko.resources.compose.stringResource
-import yokai.i18n.MR
-import yokai.presentation.component.ToolTipButton
+import komari.i18n.MR
+import komari.presentation.component.ToolTipButton
 
 @Composable
-fun YokaiScaffold(
+fun KomariScaffold(
     onNavigationIconClicked: () -> Unit,
     modifier: Modifier = Modifier,
     title: String = "",

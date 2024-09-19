@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "yokai.presentation.core"
+    namespace = "komari.presentation.core"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

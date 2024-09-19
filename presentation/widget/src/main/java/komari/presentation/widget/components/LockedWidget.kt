@@ -1,4 +1,4 @@
-package yokai.presentation.widget.components
+package komari.presentation.widget.components
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
@@ -16,11 +16,11 @@ import androidx.glance.text.Text
 import androidx.glance.text.TextAlign
 import androidx.glance.text.TextStyle
 import androidx.glance.unit.ColorProvider
-import yokai.i18n.MR
-import yokai.presentation.core.Constants
-import yokai.presentation.widget.ContainerModifier
-import yokai.presentation.widget.R
-import yokai.presentation.widget.util.stringResource
+import komari.i18n.MR
+import komari.presentation.core.Constants
+import komari.presentation.widget.ContainerModifier
+import komari.presentation.widget.R
+import komari.presentation.widget.util.stringResource
 
 @Composable
 fun LockedWidget() {

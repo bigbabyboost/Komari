@@ -1,4 +1,4 @@
-package yokai.util
+package komari.util
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

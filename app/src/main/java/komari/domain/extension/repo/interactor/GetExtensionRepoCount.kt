@@ -1,6 +1,6 @@
-package yokai.domain.extension.repo.interactor
+package komari.domain.extension.repo.interactor
 
-import yokai.domain.extension.repo.ExtensionRepoRepository
+import komari.domain.extension.repo.ExtensionRepoRepository
 
 class GetExtensionRepoCount(
     private val extensionRepoRepository: ExtensionRepoRepository

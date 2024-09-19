@@ -1,4 +1,4 @@
-package yokai.util.lang
+package komari.util.lang
 
 import kotlinx.coroutines.CancellableContinuation
 import kotlinx.coroutines.CoroutineStart

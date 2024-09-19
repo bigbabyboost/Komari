@@ -142,10 +142,10 @@ import kotlin.math.max
 import kotlin.math.roundToInt
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeoutOrNull
-import yokai.domain.manga.models.cover
-import yokai.i18n.MR
-import yokai.presentation.core.Constants
-import yokai.util.lang.getString
+import komari.domain.manga.models.cover
+import komari.i18n.MR
+import komari.presentation.core.Constants
+import komari.util.lang.getString
 import android.R as AR
 
 class MangaDetailsController :

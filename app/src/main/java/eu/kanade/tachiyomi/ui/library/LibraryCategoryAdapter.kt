@@ -16,9 +16,9 @@ import eu.kanade.tachiyomi.util.system.timeSpanFromNow
 import eu.kanade.tachiyomi.util.system.withDefContext
 import kotlinx.coroutines.runBlocking
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.ui.UiPreferences
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.ui.UiPreferences
+import komari.i18n.MR
+import komari.util.lang.getString
 import java.util.*
 
 /**

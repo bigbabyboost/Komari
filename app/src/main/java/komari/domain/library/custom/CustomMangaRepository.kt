@@ -1,7 +1,7 @@
-package yokai.domain.library.custom
+package komari.domain.library.custom
 
 import kotlinx.coroutines.flow.Flow
-import yokai.domain.library.custom.model.CustomMangaInfo
+import komari.domain.library.custom.model.CustomMangaInfo
 
 interface CustomMangaRepository {
     fun subscribeAll(): Flow<List<CustomMangaInfo>>

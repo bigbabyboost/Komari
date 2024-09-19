@@ -24,10 +24,10 @@ import java.text.DecimalFormat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.manga.models.cover
-import yokai.i18n.MR
-import yokai.presentation.core.util.coil.loadManga
-import yokai.util.lang.getString
+import komari.domain.manga.models.cover
+import komari.i18n.MR
+import komari.presentation.core.util.coil.loadManga
+import komari.util.lang.getString
 
 class MigrationProcessHolder(
     private val view: View,

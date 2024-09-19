@@ -1,4 +1,4 @@
-package yokai.domain.download
+package komari.domain.download
 
 import eu.kanade.tachiyomi.core.preference.PreferenceStore
 

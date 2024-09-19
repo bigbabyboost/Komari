@@ -1,4 +1,4 @@
-package yokai.presentation.widget
+package komari.presentation.widget
 
 import android.content.Context
 import androidx.glance.appwidget.GlanceAppWidgetManager

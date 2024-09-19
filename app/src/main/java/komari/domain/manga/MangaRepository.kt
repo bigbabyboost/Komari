@@ -1,9 +1,9 @@
-package yokai.domain.manga
+package komari.domain.manga
 
 import eu.kanade.tachiyomi.data.database.models.LibraryManga
 import eu.kanade.tachiyomi.domain.manga.models.Manga
 import kotlinx.coroutines.flow.Flow
-import yokai.domain.manga.models.MangaUpdate
+import komari.domain.manga.models.MangaUpdate
 
 interface MangaRepository {
     suspend fun getMangaList(): List<Manga>

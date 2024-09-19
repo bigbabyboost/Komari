@@ -33,9 +33,9 @@ import kotlinx.coroutines.runBlocking
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.manga.interactor.GetLibraryManga
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.manga.interactor.GetLibraryManga
+import komari.i18n.MR
+import komari.util.lang.getString
 import java.util.*
 import java.util.concurrent.*
 import kotlin.math.roundToInt

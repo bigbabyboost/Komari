@@ -18,14 +18,14 @@ import eu.kanade.tachiyomi.util.system.launchNow
 import kotlin.math.max
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.domain.category.interactor.GetCategories
-import yokai.domain.chapter.interactor.GetChapter
-import yokai.domain.chapter.interactor.InsertChapter
-import yokai.domain.chapter.interactor.UpdateChapter
-import yokai.domain.library.custom.model.CustomMangaInfo
-import yokai.domain.manga.interactor.GetManga
-import yokai.domain.manga.interactor.InsertManga
-import yokai.domain.manga.interactor.UpdateManga
+import komari.domain.category.interactor.GetCategories
+import komari.domain.chapter.interactor.GetChapter
+import komari.domain.chapter.interactor.InsertChapter
+import komari.domain.chapter.interactor.UpdateChapter
+import komari.domain.library.custom.model.CustomMangaInfo
+import komari.domain.manga.interactor.GetManga
+import komari.domain.manga.interactor.InsertManga
+import komari.domain.manga.interactor.UpdateManga
 
 class MangaBackupRestorer(
     private val db: DatabaseHelper = Injekt.get(),

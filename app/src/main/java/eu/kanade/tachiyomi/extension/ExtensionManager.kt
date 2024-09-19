@@ -25,8 +25,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.parcelize.Parcelize
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
-import yokai.domain.base.BasePreferences
-import yokai.domain.extension.interactor.TrustExtension
+import komari.domain.base.BasePreferences
+import komari.domain.extension.interactor.TrustExtension
 import java.util.*
 import java.util.concurrent.*
 

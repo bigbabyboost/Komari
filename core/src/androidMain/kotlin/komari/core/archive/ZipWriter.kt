@@ -1,4 +1,4 @@
-package yokai.core.archive
+package komari.core.archive
 
 import android.content.Context
 import android.system.Os

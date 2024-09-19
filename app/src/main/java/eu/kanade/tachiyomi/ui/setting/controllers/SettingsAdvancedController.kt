@@ -83,11 +83,11 @@ import rikka.sui.Sui
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import uy.kohesive.injekt.injectLazy
-import yokai.domain.base.BasePreferences.ExtensionInstaller
-import yokai.domain.extension.interactor.TrustExtension
-import yokai.domain.manga.interactor.GetManga
-import yokai.i18n.MR
-import yokai.util.lang.getString
+import komari.domain.base.BasePreferences.ExtensionInstaller
+import komari.domain.extension.interactor.TrustExtension
+import komari.domain.manga.interactor.GetManga
+import komari.i18n.MR
+import komari.util.lang.getString
 import android.R as AR
 import eu.kanade.tachiyomi.ui.setting.summaryMRes as summaryRes
 import eu.kanade.tachiyomi.ui.setting.titleMRes as titleRes

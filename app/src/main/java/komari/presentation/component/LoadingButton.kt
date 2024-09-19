@@ -1,4 +1,4 @@
-package yokai.presentation.component
+package komari.presentation.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Spring

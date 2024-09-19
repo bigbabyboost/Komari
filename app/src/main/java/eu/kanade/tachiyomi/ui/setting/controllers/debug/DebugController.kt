@@ -11,7 +11,7 @@ import eu.kanade.tachiyomi.ui.setting.preference
 import eu.kanade.tachiyomi.ui.setting.preferenceCategory
 import eu.kanade.tachiyomi.util.system.DeviceUtil
 import eu.kanade.tachiyomi.util.view.withFadeTransaction
-import yokai.i18n.MR
+import komari.i18n.MR
 import java.text.DateFormat
 
 class DebugController : SettingsLegacyController() {

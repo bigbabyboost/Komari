@@ -1,13 +1,13 @@
-package yokai.data.library.custom
+package komari.data.library.custom
 
 import android.database.sqlite.SQLiteException
 import co.touchlab.kermit.Logger
 import eu.kanade.tachiyomi.util.system.e
 import kotlinx.coroutines.flow.Flow
-import yokai.data.DatabaseHandler
-import yokai.domain.library.custom.CustomMangaRepository
-import yokai.domain.library.custom.exception.SaveCustomMangaException
-import yokai.domain.library.custom.model.CustomMangaInfo
+import komari.data.DatabaseHandler
+import komari.domain.library.custom.CustomMangaRepository
+import komari.domain.library.custom.exception.SaveCustomMangaException
+import komari.domain.library.custom.model.CustomMangaInfo
 
 class CustomMangaRepositoryImpl(private val handler: DatabaseHandler) : CustomMangaRepository {
     override fun subscribeAll(): Flow<List<CustomMangaInfo>> =

@@ -1,4 +1,4 @@
-package yokai.presentation.component
+package komari.presentation.component
 
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.RowScope

@@ -1,10 +1,10 @@
-package yokai.domain.extension.interactor
+package komari.domain.extension.interactor
 
 import android.content.pm.PackageInfo
 import androidx.core.content.pm.PackageInfoCompat
 import eu.kanade.tachiyomi.core.preference.getAndSet
-import yokai.domain.extension.repo.ExtensionRepoRepository
-import yokai.domain.source.SourcePreferences
+import komari.domain.extension.repo.ExtensionRepoRepository
+import komari.domain.source.SourcePreferences
 
 class TrustExtension(
     private val extensionRepoRepository: ExtensionRepoRepository,

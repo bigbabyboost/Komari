@@ -1,4 +1,4 @@
-package yokai.core.di
+package komari.core.di
 
 import android.app.Application
 import eu.kanade.tachiyomi.BuildConfig
@@ -10,14 +10,14 @@ import eu.kanade.tachiyomi.data.preference.PreferencesHelper
 import eu.kanade.tachiyomi.data.track.TrackPreferences
 import eu.kanade.tachiyomi.network.NetworkPreferences
 import org.koin.dsl.module
-import yokai.domain.backup.BackupPreferences
-import yokai.domain.base.BasePreferences
-import yokai.domain.download.DownloadPreferences
-import yokai.domain.recents.RecentsPreferences
-import yokai.domain.source.SourcePreferences
-import yokai.domain.storage.StoragePreferences
-import yokai.domain.ui.UiPreferences
-import yokai.domain.ui.settings.ReaderPreferences
+import komari.domain.backup.BackupPreferences
+import komari.domain.base.BasePreferences
+import komari.domain.download.DownloadPreferences
+import komari.domain.recents.RecentsPreferences
+import komari.domain.source.SourcePreferences
+import komari.domain.storage.StoragePreferences
+import komari.domain.ui.UiPreferences
+import komari.domain.ui.settings.ReaderPreferences
 
 fun preferenceModule(application: Application) = module {
     single<PreferenceStore> { AndroidPreferenceStore(application) }
