@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Yōkai</string>
-    <string name="app_short_name" translatable="false">Yōkai</string>
+    <string name="app_name" translatable="false">Komari</string>
+    <string name="app_short_name" translatable="false">Komari</string>
     <string name="app_normalized_name" translatable="false">Komari</string>
 
     <string name="all_files_permission_required">File permissions required</string>

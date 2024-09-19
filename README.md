@@ -4,7 +4,7 @@
     <img src="./.github/readme-images/app-icon.webp" alt="Komari logo" height="200px" width="200px" />
 </a>
 
-# Yōkai
+# Komari
 
 </div>
 
@@ -28,7 +28,7 @@ A free and open source manga reader
 
 ## About Fork
 
-This fork was created for personal usage, the name Yōkai is chosen in theme of my "paranormal" fork collection, all of them are made for personal purposes, to explore the language used to made them, explore new tech, or simply want to add my own twists that may not accepted by upstream as a PR.
+This fork was created for personal usage, the name Komari is chosen in theme of my "paranormal" fork collection, all of them are made for personal purposes, to explore the language used to made them, explore new tech, or simply want to add my own twists that may not accepted by upstream as a PR.
 
 Updates are sporadic, sometime fast, sometime slow.
 
@@ -39,7 +39,7 @@ As of the time of writing, this fork is currently focusing on migrating to a muc
 <div align="left">
 
 <details open="">
-    <summary><h3>From Yōkai</h3></summary>
+    <summary><h3>From Komari</h3></summary>
 
 * NSFW/SFW library filter (taken from [TachiyomiSY](https://github.com/jobobby04/TachiyomiSY)).
 * Fix backup incompatibility with upstream.

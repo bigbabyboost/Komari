@@ -329,8 +329,8 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - (Experimental) Option to append chapter ID to download filename to avoid conflict
 
 ### Changes
-- Changed notification icon to use Yōkai's logo instead
-- Yōkai is now ComicInfo compliant. [Click here to learn more](https://anansi-project.github.io/docs/comicinfo/intro)
+- Changed notification icon to use Komari's logo instead
+- Komari is now ComicInfo compliant. [Click here to learn more](https://anansi-project.github.io/docs/comicinfo/intro)
 - Removed "Couldn't split downloaded image" notification to reduce confusion. It has nothing to do with unsuccessful split, it just think it shouldn't split the image
 
 ### Fixes
@@ -477,7 +477,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - Fixed trusting extension caused it to appear twice
 
 ### Other
-- Change Shikimori client from Tachi's to Yōkai's
+- Change Shikimori client from Tachi's to Komari's
 - Move TrackPreferences to PreferenceModule
 
 ## [1.7.10]
@@ -506,7 +506,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 ## [1.7.8]
 
 ### Changes
-- Local source now try to find entries not only in `Yōkai/` but also in `Komari/` and `TachiyomiJ2K/` for easier migration
+- Local source now try to find entries not only in `Komari/` but also in `Komari/` and `TachiyomiJ2K/` for easier migration
 
 ### Other
 - Changed AniList and MAL clientId, you may need to logout and re-login
@@ -544,7 +544,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 - Removed built-in extension repo
 - Removed links related to Tachiyomi
 - Ported upstream's trust extension logic
-- Rebrand to Yōkai
+- Rebrand to Komari
 
 ### Other
 - Start migrating to Compose
@@ -552,7 +552,7 @@ The format is simplified version of [Keep a Changelog](https://keepachangelog.co
 ## [1.7.4]
 
 ### Changes
-- Rename project to Yōkai (Z)
+- Rename project to Komari (Z)
 - Replace Tachiyomi's purged extensions with Keiyoushi extensions (Temporary solution until I ported custom extension repo feature) (Z)
 - Unread count now respect scanlator filter (J2K)
 
