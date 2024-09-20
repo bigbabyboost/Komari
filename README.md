@@ -28,11 +28,7 @@ A free and open source manga reader
 
 ## About Fork
 
-This fork was created for personal usage, the name Komari is chosen in theme of my "paranormal" fork collection, all of them are made for personal purposes, to explore the language used to made them, explore new tech, or simply want to add my own twists that may not accepted by upstream as a PR.
-
-Updates are sporadic, sometime fast, sometime slow.
-
-As of the time of writing, this fork is currently focusing on migrating to a much more modern infrastructure, some features may be added, but most changes are happening behind the scene.
+This fork was created for personal usage, the name Komari is chosen from My favorite character from Non Non Biyori.
 
 ## Features
 
