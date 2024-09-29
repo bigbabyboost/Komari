@@ -145,11 +145,9 @@ import uy.kohesive.injekt.api.get
 import komari.domain.ui.UiPreferences
 import komari.i18n.MR
 import komari.util.lang.getString
-import java.util.*
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.roundToInt
-import kotlin.random.Random
 import kotlin.random.nextInt
 import android.R as AR
 
