@@ -18,7 +18,7 @@ voyager = "1.1.0-beta02"
 [libraries]
 aboutlibraries = { module = "com.mikepenz:aboutlibraries-compose-m3", version.ref = "aboutlibraries" }
 
-accompanist-webview = { module = "com.google.accompanist:accompanist-webview", version = "0.30.1" }
+accompanist-webview = { module = "com.google.accompanist:accompanist-webview", version = "0.36.0" }
 chucker-library-no-op = { module = "com.github.ChuckerTeam.Chucker:library-no-op", version.ref = "chucker" }
 chucker-library = { module = "com.github.ChuckerTeam.Chucker:library", version.ref = "chucker" }
 coil3-bom = { module = "io.coil-kt.coil3:coil-bom", version = "3.0.0-alpha10" }
