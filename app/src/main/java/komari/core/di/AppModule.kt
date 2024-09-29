@@ -1,7 +1,6 @@
 package komari.core.di
 
 import android.app.Application
-import android.content.Context
 import androidx.sqlite.db.SupportSQLiteOpenHelper
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.driver.android.AndroidSqliteDriver
@@ -37,8 +36,7 @@ import komari.domain.SplashState
 import komari.domain.storage.StorageManager
 
 fun appModule(app: Application) = module {
-    single<Application> { app }
-    single<Context> { app }
+    single { app }
 
     single<SupportSQLiteOpenHelper> {
         val configuration = SupportSQLiteOpenHelper.Configuration.builder(app)

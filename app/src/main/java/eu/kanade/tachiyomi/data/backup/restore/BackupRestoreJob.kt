@@ -9,7 +9,6 @@ import androidx.work.ExistingWorkPolicy
 import androidx.work.ForegroundInfo
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
-import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
 import co.touchlab.kermit.Logger
@@ -20,6 +19,7 @@ import eu.kanade.tachiyomi.util.system.jobIsRunning
 import eu.kanade.tachiyomi.util.system.localeContext
 import eu.kanade.tachiyomi.util.system.tryToSetForeground
 import eu.kanade.tachiyomi.util.system.withIOContext
+import eu.kanade.tachiyomi.util.system.workManager
 import kotlinx.coroutines.CancellationException
 import komari.i18n.MR
 import komari.util.lang.getString
@@ -30,13 +30,15 @@ class BackupRestoreJob(val context: Context, workerParams: WorkerParameters) : C
     private val restorer = BackupRestorer(context, notifier)
 
     override suspend fun getForegroundInfo(): ForegroundInfo {
-        val notification = notifier.showRestoreProgress(progress = -1).build()
-        val id = Notifications.ID_RESTORE_PROGRESS
-        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            ForegroundInfo(id, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
-        } else {
-            ForegroundInfo(id, notification)
-        }
+        return ForegroundInfo(
+            Notifications.ID_RESTORE_PROGRESS,
+            notifier.showRestoreProgress(progress = -1).build(),
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC
+            } else {
+                0
+            }
+        )
     }
 
     override suspend fun doWork(): Result {
@@ -72,14 +74,13 @@ class BackupRestoreJob(val context: Context, workerParams: WorkerParameters) : C
                 .setInputData(workDataOf(BackupConst.EXTRA_URI to uri.toString()))
                 .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
                 .build()
-            WorkManager.getInstance(context)
-                .enqueueUniqueWork(TAG, ExistingWorkPolicy.REPLACE, request)
+            context.workManager.enqueueUniqueWork(TAG, ExistingWorkPolicy.REPLACE, request)
         }
 
         fun stop(context: Context) {
-            WorkManager.getInstance(context).cancelUniqueWork(TAG)
+            context.workManager.cancelUniqueWork(TAG)
         }
 
-        fun isRunning(context: Context) = WorkManager.getInstance(context).jobIsRunning(TAG)
+        fun isRunning(context: Context) = context.workManager.jobIsRunning(TAG)
     }
 }

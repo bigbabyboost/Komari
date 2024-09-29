@@ -5,6 +5,8 @@ import android.content.pm.ServiceInfo
 import android.net.Uri
 import android.os.Build
 import androidx.core.net.toUri
+import androidx.work.BackoffPolicy
+import androidx.work.Constraints
 import androidx.work.CoroutineWorker
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.ExistingWorkPolicy
@@ -12,7 +14,6 @@ import androidx.work.ForegroundInfo
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkInfo
-import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
 import co.touchlab.kermit.Logger
@@ -22,18 +23,22 @@ import eu.kanade.tachiyomi.data.backup.restore.BackupRestoreJob
 import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.util.system.e
 import eu.kanade.tachiyomi.util.system.localeContext
-import eu.kanade.tachiyomi.util.system.tryToSetForeground
 import eu.kanade.tachiyomi.util.system.notificationManager
+import eu.kanade.tachiyomi.util.system.tryToSetForeground
+import eu.kanade.tachiyomi.util.system.workManager
+import java.util.concurrent.TimeUnit
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import komari.domain.backup.BackupPreferences
 import komari.domain.storage.StorageManager
 import java.util.concurrent.*
+import uy.kohesive.injekt.injectLazy
 
 class BackupCreatorJob(private val context: Context, workerParams: WorkerParameters) :
     CoroutineWorker(context, workerParams) {
 
-    val notifier = BackupNotifier(context.localeContext)
+    private val notifier = BackupNotifier(context.localeContext)
+    private val storageManager: StorageManager by injectLazy()
 
     override suspend fun doWork(): Result {
         val isAutoBackup = inputData.getBoolean(IS_AUTO_BACKUP_KEY, true)
@@ -44,7 +49,7 @@ class BackupCreatorJob(private val context: Context, workerParams: WorkerParamet
             ?: getAutomaticBackupLocation()
             ?: return Result.failure()
 
-        tryToSetForeground()
+        // tryToSetForeground()
 
         val options = inputData.getBooleanArray(BACKUP_FLAGS_KEY)?.let { BackupOptions.fromBooleanArray(it) }
             ?: BackupOptions()
@@ -54,7 +59,7 @@ class BackupCreatorJob(private val context: Context, workerParams: WorkerParamet
             if (!isAutoBackup) notifier.showBackupComplete(UniFile.fromUri(context, location.toUri())!!)
             Result.success()
         } catch (e: Exception) {
-            Logger.e(e)
+            Logger.e(e) { "Unable to create backup" }
             if (!isAutoBackup) notifier.showBackupError(e.message)
             Result.failure()
         } finally {
@@ -62,10 +67,8 @@ class BackupCreatorJob(private val context: Context, workerParams: WorkerParamet
         }
     }
 
-    private fun getAutomaticBackupLocation(): Uri? {
-        val storageManager = Injekt.get<StorageManager>()
-        return storageManager.getAutomaticBackupsDirectory()?.uri
-    }
+    private fun getAutomaticBackupLocation(): Uri? =
+        storageManager.getAutomaticBackupsDirectory()?.uri
 
     override suspend fun getForegroundInfo(): ForegroundInfo {
         return ForegroundInfo(
@@ -81,28 +84,34 @@ class BackupCreatorJob(private val context: Context, workerParams: WorkerParamet
 
     companion object {
         fun isManualJobRunning(context: Context): Boolean {
-            val list = WorkManager.getInstance(context).getWorkInfosByTag(TAG_MANUAL).get()
-            return list.find { it.state == WorkInfo.State.RUNNING } != null
+            return context.workManager
+                .getWorkInfosByTag(TAG_MANUAL).get()
+                .find { it.state == WorkInfo.State.RUNNING } != null
         }
 
         fun setupTask(context: Context, prefInterval: Int? = null) {
             val preferences = Injekt.get<BackupPreferences>()
             val interval = prefInterval ?: preferences.backupInterval().get()
-            val workManager = WorkManager.getInstance(context)
             if (interval > 0) {
+                val constraints = Constraints(
+                    requiresBatteryNotLow = true,
+                )
+
                 val request = PeriodicWorkRequestBuilder<BackupCreatorJob>(
                     interval.toLong(),
                     TimeUnit.HOURS,
                     10,
                     TimeUnit.MINUTES,
                 )
+                    .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 10, TimeUnit.MINUTES)
                     .addTag(TAG_AUTO)
+                    .setConstraints(constraints)
                     .setInputData(workDataOf(IS_AUTO_BACKUP_KEY to true))
                     .build()
 
-                workManager.enqueueUniquePeriodicWork(TAG_AUTO, ExistingPeriodicWorkPolicy.UPDATE, request)
+                context.workManager.enqueueUniquePeriodicWork(TAG_AUTO, ExistingPeriodicWorkPolicy.UPDATE, request)
             } else {
-                workManager.cancelUniqueWork(TAG_AUTO)
+                context.workManager.cancelUniqueWork(TAG_AUTO)
             }
         }
 
@@ -116,7 +125,7 @@ class BackupCreatorJob(private val context: Context, workerParams: WorkerParamet
                 .addTag(TAG_MANUAL)
                 .setInputData(inputData)
                 .build()
-            WorkManager.getInstance(context).enqueueUniqueWork(TAG_MANUAL, ExistingWorkPolicy.KEEP, request)
+            context.workManager.enqueueUniqueWork(TAG_MANUAL, ExistingWorkPolicy.KEEP, request)
         }
     }
 }

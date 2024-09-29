@@ -40,9 +40,12 @@ import eu.kanade.tachiyomi.R
 import eu.kanade.tachiyomi.data.preference.PreferencesHelper
 import eu.kanade.tachiyomi.extension.util.ExtensionLoader
 import eu.kanade.tachiyomi.ui.main.MainActivity
+import java.io.File
+import java.util.Locale
+import kotlin.math.max
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -232,6 +235,9 @@ val Context.wifiManager: WifiManager
  */
 val Context.powerManager: PowerManager
     get() = getSystemService()!!
+
+val Context.workManager: WorkManager
+    get() = WorkManager.getInstance(this)
 
 /**
  * Returns true if device is connected to Wifi.
